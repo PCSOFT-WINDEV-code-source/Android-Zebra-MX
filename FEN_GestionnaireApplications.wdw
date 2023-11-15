@@ -1,0 +1,342 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FEN_GestionnaireApplications
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : FEN_GestionnaireApplications
+ identifier : 0x2fc8bbd52669a891
+ internal_properties : CAAAAAgAAAAJvYQd7vapdiELyFDa0LmZatftDS/W85iDpCn9aEktJSqi7AZBTjdhykLTcJ4XdiI5F03E4UoeuDWLiqCNelPOZXs8OxQKXlvcdhPRUCqeTcibuI9JCRhIGjL6FA+3MYIAB/NP0N87PkGEyohtRSb4/crQag5SfhehZhHF66AbrLESoVbGDF6GdQLTBNIu6h0iY+3ATtejxBH2KrwRWtMPrzb/+IKHrFjnTrCJ2NaeZqKoQAmeL7RFzsgQqvA8C1knzlybQrWs8hLmpzcAGaXA+yW02QcfX//Kg2NZB5tID5k9LDqBWjHIYvYAHc+heSzfDY4Tu2c2mswC6d5M46wi2ox5U3bmGSOT59WMcrFpn2Iqpfd6M8sxmGT+FMUJVTZynxETYndxRzIzoKUIc8PYR2K5UCVGT6Kab+/uG7rFARZNtSnVGt2zPhedVunu1c9qbxiL9Meik4fVQWJSfJUKlCqT7x2zoP/gH7hb9YW/7SexFWVCW8owfBtIyO3uSb2bU/MB1A7n8tmtd905XVa8bPiyRZX7dGAf1aM9XySWZaiPCgrTWQZDf1RJkjERKsT0fA7ShKpnAmPnUv+vkvNdOkWJzazm1fVoPqmo2+hv7xyiIhcKmIo4rH1531UQGpCljmJZ3+ekeb2CGo0uhvvdPXWpoZ6BpXMgV7vSXfCgLk0C5tSDHN9nY3tVlaCMcLa7xEb/kuDPcjQGvhATmpuLasJPSkW8g5KRO/NdehBwS6M4K6ECROARgozG7wpJEQNakplMRiUr8fkwGJvsCIDeX0394c0cKM/FU+XSAOPB7KEZuy03tfiGMTfMx1RigonMMwEWwBwanaupNNigQFjMaIVx+dFoK0izVZNtUrwjxhgB7zpoeVc0I5DcpxPyrVO7fEv5PEbGFIT2lLTwMyWyk6kAVR8AvnM/AwhxsyWm+wq6sPi4K1nxxXtCe2V0qnOMR9vXkYDNnmpEa5e+FkMcqdJJa+A6pdeatC0wV5UVQyrKp9RgZhJojm0GwDrxJC1i6s1MN7Pq6qodHI0Ah+ZDf9hfJlfR1MUEwufuG9LoGyebYUllRtltQ+FD0Xjdoo9cSL1sRZRWIVrEMgSzEGqkgYUxXje2/uLisqTRSA3Rkq6e7Xh3Wx9znNd8ArQPbKhOapYVfcUJARk9Zquvaz6JVVqxlTOdO4vqP4Gbiikz7shKprVAvWTBGHxXPsLlczmLFNlcsv2qGcGwBomKdGuBxGcEkr/yKRC4QL/EF7w8Fs2V0tHo8pezFPAFtMCCS66Ayzcg3qt/dsY19z54NOqi2JKRLIppDDUb5vqnF1QRi570XlDHasNLFCDXCjIcy9CEYys/EtuMu9CexpFEWGk6cD4keuUarebBlmB/+/ECqeVxfexQ2SbMFcqJT6tftcDRakp9z+fsaKuH9HYywaa2iZwJQXKGWvyY542Id0nxAEpgmQoPQ7aQDIGmzH7ZWxpy8RKKCl3OnJIxgK/KYsAQ0J/8F2c2q3XYqB6gUNpNxRZOzHAjp6VLIQ==
+ properties :
+  width : 320
+  height : 407
+  heightMin : 480
+ controls :
+  -
+    name : SAI_Stat
+    identifier : 0x2fc8bbd5266aa891
+    internal_properties : CAAAAAgAAAAkxluXqw5W2zM01J0IWd5n4F0NrTnw6t/WuS+btCnl5LL2bNMwxvrEov1kpFybXV4c82qyanJvvKlU6Mc/GUBGJbhfu+fXDCg8SrvRJ0s/W9v9yfIEFQ1zSTsXIeY5t22IfUly+cA5F9/C2jtLDHIV7ipmsYru/4MIyk4SghhZmu8tn4Q83T7O3u7fS15f/9PxbgQQyUaPSpkgEUpiFJnNgGkImRFgryTGC46eApbCWwyt7s7EpAnExeknIQXJC2FcYdCbxv1+e+nhPptlg0fXfKzbnIxqnQXgBarZLFOY70VIk9bQZt8tKmZg9BnRyHSM9s+a4zeH17uou4UpmTVybyFSa6e2D4o2p9xbIWran0glARUz5/hgI+OemTuhu4SBTck5aSXeTamrz2C+IFI0ayLj3cEDpwG6AJ//K8fEITBLPc12rpcAewKsEi9KOnjYN1YW+keTwnq/Y+y78zrVaOSYDDnxTdWGm9y54R+bBoBbZxXljHbZHOa72JobpOcTKP1xYaVouM49zhGxTg5XPr58EM5S8/Qd0MIIuO7/+vRY1n4M0cH7DBR83Y4nzTJSp33Fu2zV8Etv1TvRkjn8LIre1WIgXpjaPbsVi6jeGKZHE/QVD5SDYK+FIppQqtBs3GBXzrHPl63/Bt4DjqdKqMK1KJ33ha5LFelLpirEOEzAAyCmni/PfJxDe7op2kDgAsCEb1dv9Mk817kCMtYuNkx7cEx7MexOz2vnF35a6j/d+1wioGp5dqM8rWHhY3T2kwmcewWdh+hSfmpMbz8UC55B26ovg8A+ZWY6HlIc9DEntYwe6WQraiROLinvV2W5l+PFrHbYCaA1syzbRpTWXqJ842aPInnew4t793ouSYb6cJzAkVmtmJ1glPU/SxX0eeBS19kr+l4QZCS/t+zGXq8hrEgwC8wOMC0WITFbQuMgUDEbl6Pd0sUTa8qgUXMaVO/j/c+WMz8YkWeVO3pXSsfDjqJspqGswigHA4GqFU6CSTH9DhWQM8r1pf+DiHhW3XYhP9eMxRh3s2NEQB9KpaqxzQF/ixiKZZE8+0LTCMqxqgF+/wzoQCSaaH8CS7bgvn2/WF+JoPXYyWm3rhaicwBoDk+rK7OHqBoUWrz9TTHRbWmLP4iTiZFPFFvUQ0N12AUuDlfETo0vti74+Wnckppnlo8pRw9W7JSqKeo3JwlKcDK2O7v3ExFvtkOnGRwFgKdtKFS6jJ8D9S6l4MbLfhw2cQhB3gh5eqEJMmnVBUDL/DzI5PDxMeuNlVpDQt5dOBqRPcpRTOt1H2ntdtcV1NwYS1Rnu6W3O5/GJTD7WQrE6FIRvMpYfRsyUNBOt7kjDJz0UDm2V/NNAaR7fQ9EQpFhQbQPVGybLD0eruzET5Z/2lhb9Is1V3ZwYUSQRL7YSKWJALEc4a5K649UBRu/JerWV0QVDgXvBBoREsTLvsJxOJhdDIZ8l599mqzxQp6s64QXtfKQVQ2od9Edvc07pXiHXEixvOMqQzzhYxG/QkRVpzA6xdXET5yCcwBkMKmjMIrz3Gr6CejzuVVcLpCAAqYi0k8Yri/GIIqFhieZxKyzyPs3uU3y6lSHU+V2sQ0C27jVYfgkY4+xZtES5ExptGi/HbKDT6Ibpt0sXuxonKpqUaExEbA2OEpNk4XiQBhbstM8excbG1/mhI6P/5EzAWLXz6X3jm7Ci22jyTIBBrJWK2GwQOdZcI4SLZSbi7hnh3E9Qz08OExAV48y6UNr3A1EOR8T2w/qDnH/NPaCw8KKTlawkb56grFYv8xOA0IJ2ajbnN5/MJ1bJRw4J8uj1L/eBrbqdqb35rCbL1nyK3bYh5Dj6nnFEftyyzsAzebhzYHJLRrny4widrJlF7uv3jrO69XYQTUBt+c38A+WfbvpqY0uCb7giyzq4u0PYe66OOFYMnniHeFwI1u/
+    properties :
+     x : 8
+     y : 271
+     width : 304
+     height : 128
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : SEL_Operation
+    identifier : 0x2fc8bbd5266ba891
+    internal_properties : CAAAAAgAAAC0Mg3PyDtxHfcSIi2LhJohV57C1m1o1fqpKYfzfWxofM7ecbi3gFi7y58qPnieky1qs4NL7DYxC2y7cINLsXrk046THeV8bqSBGx4rOMCzAI9dgyOvHs4tf9jf2k9VVeLd6BRz7MPfJRNo+PDa1YLGMcAIkdB3J+EtF7KCdUDK2r8V8l3uoQvHpweLScq5aoy3dMHPbHatJRH4DAmJioIkMO1MyvcXEZotE8OnwoAwFD4O2r9lKbQjhE0BI5kusSr8xVHsIP/YeiQfv2EHgRyFBvPv4gRMxoA4PUtAGivisoxOZAcfvBhI9qdgUs0zCaKFCdOX/nfQNh9PK2ri7bNUjsmKTkwTaLpuz8LRxAHaz1FkLhM0Tda98JfJncMIKNUZ891ff9ZOczrah1O7uDDI4lECoHZyLcrnqlrnlz+DpMhlWoMqDUxjL/MQ0kile+IIa1rn6YfSSig238kILnLVJa+SSxrVPm29EO5uwwbv6XCjugw/E9Knd2t3ppt3LZxeqE3eFpU4dQM3JP26xLEZ8GW1RIOTj9PFqjKIREnqeRe9oqcBmTuQUpXPEy58h46N3MpBCqV5JtJQ1oJ1IwLS9OmDxTEg/2elFbrLezSFqKRNn4UZglwbW9i+PR/Gc3JC1FX4XAyKQ+7xFAC2XCwqUT1T++aBTxDu41+itoJmnHtWcb7tcfjunaM0QfvOgwfz0klZ9oKg71H3pAoUV2SD2GYjcRo48Tu2LbcMSxey3x5m7m5GXOaAe1viS5XXDkHzTq62tOiPQfalCKVxM1JUr+39PFMt6y4CbFDXH6XVfsn2cOEnh9W97nliWKHS1DICK/PjnDUSVOzq40vpA+Pzsh8jCjCGpbrHroC0YtlVmnWpvWZ0CgkaO8FJhNoYNFjpX/TlfBnwaH1j8V04uhq9Wq8Lj+Q0NuNPsMoUynLCPJuEiHul989ICwjwfgUR7QayGRbVyMHZbp1jbCnv+6cUfeC4N6BBdE0fyAZ+Fwokz6L7ZDRtvmNPe5vzF7rNXiTxvg/+owlLK/4dDjet3sz8PS1oX9ef2qv1cIaZCW2KYp/KkVHP+8DSLHlq+mF545IFD8POZaGNuh1yRJTsr7wrkmIRtmqNS2MA5bLyduSR6nyCPNghMJF4WTw5nJr/PX4yYHsZowEjpRjTk9XQqRXy7cOyySWg85U08Fu0lb76onmw54WcrP6XSnkPrae41DGkeRJpX0r6DTs2Ps8shey27siVcy0xsd0zQdOGusXpcHhDMSjRWRwUXo4YUUTQViFxV6Dai4oYzWmP2Oar1SimttsQJEPp+YNLnD3SKGlcGN70nr0+BMKC8NlDJUWFk66uLhRY+6a946kJCiqH1EJByjd70uH7vFRrEkLSpC08LJ+aDq3WrSEpfMscCNiYN6fwFEk2wFpKHBz9gNiOau/dODwqhNddyXVoIQjYuq+/C/mYBEKrz3Y9AulQnVYkEk3vf9wQmZq236uW1YBaMLK3
+    properties :
+     x : 8
+     y : 8
+     width : 304
+     height : 111
+    options :
+     -
+       internal_properties : CAAAAAgAAAD/fqa1mChqaNj+zpbpDFSPfXbQI0GySAU73FwUbmxjWKPVIPvZSTWDnPj4zZ5NXFyqd4nM2sj8vW486rJlH2fNnTyz7vtpXsnSq+IKo1Q9cLL9H31pFl74U6M2npZiTft6+AtL860ieOOZRIuUAlMDsV5Zcvlb/FxBPe+PF5KfCdFwYmU8dnj0ftInhjxkoi2DOC3zACWmr0d2/g==
+     -
+       internal_properties : CAAAAAgAAAChipA0/LK2PQ/pSWbiaNi3BpF8rm45KUGGMzORZQv2bn7gtxNetDEe1tRgcfnQVsOkK26O99n66cluiyYANMw0/lZdGeGvwZ1vspohIJ6mdK6ShkLhHehjAg7fN3Y3Dftn/MoIp+a499ZIc+S7geW1PiQW7a/8/gEeHmLqI/rslP1jenuHsg0oZhW9oFusJ7EyJ6taanuZFMcZ/fWQdt1a+Xcs2w==
+     -
+       internal_properties : CAAAAAgAAAB/MygV4gKMz4JPMU5TTjF8ZwJsrSPFdV1kxurB9YMX4+rGsDLyUYRVyD3fsHoeUn2Lie3w5SsWk9vTuYIkaamRgpjLerjbtO6WL+xsedDEwqBjKRlcGlJWsq74qaaEFOEQbTMgfEsH5l01sxcGXwiQNNM++FUr1HpeKRxU3sUXtVAwqvoBVxOxeo/GCtualxSyHC2fP7oBWVUaQySh4YMgCs4=
+    type : 6
+    controls : []
+    code_elements :
+     type_code : 6
+     p_codes :
+      -
+        code : |1+
+         SEL_Operation = 1
+        type : 14
+      -
+        internal_properties : CAAAAAgAAADx2DCxvSfkCYNoOWPMYK51ZmAy6NO3jKWlxrTOWlUzWdzhQSnw/zUzas2Sp9k4pSyHUzVb0GGG47itzfJzI/PU8083+xLh/4lvoGjJMw1EG/m2w8HD0TfCAwy1c8llNO4320SO4IFxkHyG3uVAxSsH3h2XScPuH3e6ex2ghTN+/Q==
+        code : |1+
+         SELON SEL_Operation
+         	// Installer
+         	CAS 1
+         		LIB_DescriptionChampSaisie = "Chemin complet vers l'APK (Ex: /sdcard/TestApp.apk)"
+         	// Mettre à jour
+         	CAS 2
+         		LIB_DescriptionChampSaisie = "Chemin complet vers l'APK (Ex: /sdcard/TestApp.apk)"
+         	// Désinstaller
+         	CAS 3
+         		LIB_DescriptionChampSaisie = "Nom du package de l'application (Ex: com.masociete.monapplication)"
+         		SAI_ChampDeSaisie = "com.zebra.demozebramx"
+         FIN
+        type : 17
+  -
+    name : LIB_DescriptionChampSaisie
+    identifier : 0x2fc8bbd5266fa891
+    internal_properties : CAAAAAgAAACe9R++b10uu+VGZODtQZ8fFeI0v/IKV4HW7n/jA1Jhy1KApQ/Qw2Tt1V3wtT75Ono+eClps2xZGRSTNr3My1V4KUprO7E2kV5afFFD0R9XsxWyMCM6nEkGNwxDG/kQD9WP6pTaVyToHvX8D0ytFUVIYFMycCouqFwUKM0KnRITOBeVCi/KDR4DSm16uqrRXadfWQNTsyQV4X/4B+FD7lzJIkF9+A9U2H8Rrq6oeRPuYTdV411Suyb0zWgU/apHXCCZZ9thixSEiL/flUttcO2gdzWMkDOeuI+OMfGf78BQyo5Puiqr7nFQKBXwOmYONzcBcUTk6bqvnlpCt9yjddVRXA8vMLiqRiI6gO0vFmrUth1mYHr0s9Klsxvr9WKRF2X3aO3VsZ+iWv+PRxmJKmDy7ogdb7kxfwC2gOaaFYkO9kJ39CH1rj5up2+b/F0lZ3l1IbVhvtP9AONByjmN+8hpVoYAg5SVvVufLNupwTF+TZmKPgM9Q6NtOfehvXdEYqoymy6BOMLpy21ygJMfAr1pKiymFBTvG6aBxxbk3xEXHMFlPRFIpTWlWYSJ9dYycG2Nf/t4JZd8g20dBe4iqcHQ1tatUfZMTEQPLS0IBpoZ9NtOwQv5A+plZtH2ehiQpHj8RWbRYf9kNhIxXoVhyvr2PaGXyaM0BdWBgNBoiHXXUTiMsVMNNbVw0lR14K0mYnimjWb7VPFyUPlWvRujb7g7eR9ID/F7QetNlr7cG7G3zHOH
+    properties :
+     x : 8
+     y : 127
+     width : 304
+     height : 45
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : SAI_ChampDeSaisie
+    identifier : 0x2fc8bbd52670a891
+    internal_properties : CAAAAAgAAADoovJ52+cEBSdtIs6agu1t5U8JZoVE81eV7Frc1HqHawsvF8tlwhkACWT+niCGMTbeV+h6g9pdNT03jmvMdeW9Q1E6gA94OeLVmqH/CpXr/xYktAPqXL2u1iTXAxl93KPjZ95vKP6W9xVtU5rokLXSTBf3fm3WnT8M6x7OPQSIaQcOFjWmn3KjAILG+NDJOBROgCMk4OD9pYjDmWtbgJhwWfvjUFnVU73NODkB1t+tVrrAbhHim1ci0i2a/VX1Q48j8ciM7fwB86YTVGaF7sR0ei0qzgy8fzwpbXbJq9678z0sB0gFzWP4+CsvglK2w7u1CptFb2K77++FLYBiECdv7XkGszvbG/KaXVzO9udjhZcO8x3xjq0BZoRcuygaUGsxoAABo42NYlIevmkMnDtP06c2s/MKOpHpE2Ezsfy4yYiSCsByQowTvcQYi/URE6D2cHaEVdDYs4Nv3PZsYvt30lWeCfVu2xyZoOXVTwcj5e9ojuO6g3TtgNVYcf6asn9fV2KLt0uGODVbnskuo707Dq72Sq0v4494lqiWDpd0BKpHkPRUFE4gemKVS3Kl1RvLeU7evtGl+nPT9v0Qgo23E6/K6K7P/6gGJr7Q0dvfUiNIVjX8XKTRuWfYBDuOlrUkrcngA8fcEfbPhMKfqRhVxA5P2D/88vHjR13d8PifJ64XUnoYCljlnjOaa1bHTjOpqUyIsVFXOqs7vgGaHT6/TuVs2Ct+0T1V8HVs3QJ1xnlC9645QGaRQFUGTc9DLTZTFjFxoOGYaYPGJ7pUBNpKye7IKcZaQkx1HWuvUjhL9ZXO5bLe3fqvpvfAdGanRIP4SgbjNM55M8l2Ix92kAyqQZzvAv2UuHfSBnRmpPvFQISTW9FYU0sTsGbmRLbtngKMHC3mwKPyZ88A9wYQwL0ldASffQg8kSq47q8qGAyn+VRqWe015J7aAbpKnnHM52jhPBAWnTRg6GxGjEOLcGNAupYgcxOaS51Ib0gdC9AuZXyswijs0QoYlzH2OtTNTexPIZCm8Lj7ZDhkoAaB9BqTKCx0QK38trTaaXbByb9+Q/IgCCpTRb6mz6Nywk+ZoQElVZFROORb0GoCOygv2ck4I19cF9ZHZh/HWmE2Ujlffy4b141lFOFXBn6VLzIs1DrNZtOIUtgCqZJIF3qIbg8Pn2gEODD8S/k8PFKVEbPZLWBdotcOJVxfPU2D7VOHQvf9oHz50sZriHv6XEJQJRNL6EqwepXE3vrPNqDAkYreDP0ZJxNvr1G/sQTqTQvKm3cbdEgcEHBwSpM4YoeVplv2t8j8mb/U7T+fJuOG7XkK9813NQAF1COE5IxNeyjsWf9zRZmLvon6kpgeVfckjdpRzFX/7VJEW5c+Xs64uZdrvJxRn5JldEJqNgFUu5ZZSj80Iah1AybsHrS59hfHSxG7GAEVNiYb29F2kg9U0E576sSojM/8jVCbE/MJd6NHNaeMRWAGpla5w5nRHS/iz7hSzNo45g/a40vn27E+nQDl1ixUwL4zCVQQD8tZvzHuv3SPHtxqP6tw5MfAYFp/Vq0Quudr
+    properties :
+     x : 8
+     y : 180
+     width : 304
+     height : 44
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : BTN_Executer
+    identifier : 0x2fc8bbd52671a891
+    internal_properties : CAAAAAgAAADdIs0j/OfMRbPSbRaqJ5DSN0/ErFLnhU3yN/rohxZBhvHh7OLFvGcVOKkYOrYQNuPBrqJnda1lYmHaTE2E802F36cKXFKae1wgP0m1jjpQ5JIsnify7IAVy5iK9m3s24XdHuaB6wrJEmVZ1Pb9lgmEu6Arnk7153NwdEbC0ZCDu5khCkv/IUY/uyEVvwM6A1GGqR6+H9jsx75QO8/WJpGNX4PdPcAxyGc8D2nMrG9ghaedPuR5/vQovA/4WIW4OQsc9v6/O+ZwUgK2ZLx6EFnhNfekhLi6rvJUCRd0nQjt2a2oT921Imq52okZgGglyMpoohUSn8dDdek7H/Sl4nAfuFtOcxYgAT3Wf1CfinOZQ0z0EEomxqmcZJi1/9fOjM3qBm/UuCeY+tPpiAKQSer8ufUCGzELXVeGft2rfL98xxswACntdNeF1MOgqrLTweWyCFlfR6RWwkHh5G2OrIQrx6kk3Xou+6QqNUUSNtRyF6GUYqTmzzxLQoWXo+EzEtEX+lkoAhIsViTvQ9UUgFHxfkSboORgY+/b2kCDTEG3gd9p7e5ezmutkw7G/K8hMp23RZIgguFRvHP29lHwBjaGOrTK65EIg44qIkU6x0npUQBkXTKxByLZQMkkjffi3JQPgfq4YRkOvyeRVaW+uonr6nqptFsmSiaPsIExSB4RMXgpWBtCpV/3KK1noWul1YaiaKI7xvC0ibISlt+cb+5zyIQOIoyI0ARQk8Ob/jfcRKyMOq7y1ZE7Z57Im9rwun7Sm+CY/C8XIRx3cLm1YKX5hYoCrVEi4oZHiZvbCUMHzQnrZ2BFsCQJyLF46Sw1q1epTw2BRZHLlC4179Ag7Z0ppyq+hep95dKHILAm+oD7WfplM7v2N1Q8YYmF9dWfooKYbR+m+A85TD6uWOE/ry7NE2lnNfbEQ7LeGi+LgKLv8LJ60ArAQDZCq5rfi7YW00YhpObgLj7KiquMOMGX9U3EOmqC3LZ5qTy78YisZ7JVN0CcqaV7d+JQxYVeu4/fWozmLmBgTEQ/aQkaOlRdFoUNzsZs52cp1KmUgnfxKjmOstL/NR1v5/NL/6FmAlVlS4dm1N3fLjIw58FndHZQkgIpDDPMaszFM9Hlc2yQ7G/MM5Fw40xNgDvMsIGsQt7MjcXC+7V2YVuJOJKXwJFRWzE0aM3Yh/XeSn+lRwV5KoKQu38vDCt+XvIaPMAsMYczw+UAunfER6GkhKhJyUjLOW+x24L9xIWMRFiNjG7AC8/HD7R5ozRiho/foPPLee1KSj0FijslM2huwEMBvKVo5LSSTK+AzWVSz89+3WxdatYPU18LsSByW8n4Ji21LVchdBgtG681xA9/lMAq9KCCLxb2k5+7xIprG35kWZEXuyMXeSoli9FBLOo3upKGon9rjIK6mpMM+s124RO0eXypEbmPodNUbgaOLyyj1Fw=
+    properties :
+     x : 90
+     y : 232
+     width : 140
+     height : 31
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAADBs4QO77VlBlHaN3ikr+7/ecsOPBZ357NhGLM++FVJEQteQKANqt1R0pnvJjQKA7xJ/LikJkqFWSEwm8zhfwtnziZHqvq356mLxbVjT1lttfSu9z5Tytn4extoA2CIKNOSjlLY9zWHpaoMPWY=
+        code : |1+
+         gsStatusTexte = "Exécution du profil en cours" + RC
+         SAI_Stat = gsStatusTexte
+         SI SansEspace(SAI_ChampDeSaisie) = "" ALORS
+         	SELON SEL_Operation
+         		// Installer
+         		CAS 1
+         			AjouteLigneDansStatus("Veuillez renseigner le champ de Saisie en précisant le chemin complet vers l'APK à installer (ex: /sdcard/myTestApp.apk")
+         		// Mettre à jour
+         		CAS 2
+         			AjouteLigneDansStatus("Veuillez renseigner le champ de Saisie en précisant le chemin complet vers l'APK à mettre à jour (ex: /sdcard/myTestApp.apk")	
+         		// Désinstaller
+         		CAS 3
+         			AjouteLigneDansStatus("Veuillez renseigner le champ de Saisie en précisant le package à désinstaller (ex: com.masociete.monapplication)")
+         	FIN
+         	RETOUR
+         FIN
+         
+         // On crée une variable contenant le type d'action que l'on souhaite faire effectuer
+         // par l'AppMgr
+         eEAction est un EAppMgrAction
+         
+         SELON SEL_Operation
+         	// Installer
+         	CAS 1
+         		eEAction = EAppMgrAction.INSTALLER
+         	// Mettre à jour
+         	CAS 2
+         		eEAction = EAppMgrAction.METTRE_A_JOUR
+         			// Désinstaller
+         	CAS 3
+         		eEAction = EAppMgrAction.DESINSTALLER		
+         FIN
+         
+         ExecuteProfilAppMgr(eEAction, SAI_ChampDeSaisie, "FEN_GestionnaireApplications.CB_Succes","FEN_GestionnaireApplications.CB_Erreur")
+        type : 18
+      -
+        type : 161
+        enabled : false
+ actionbar :
+  name : ACTB_ActionBar
+  identifier : 0x2fc8bbd52672a891
+  internal_properties : CAAAAAgAAADLdfpH8dlevt3FUMEPdJqkUiBbBEnTp3kJOIaAZuV/I+isOA8B59bNq3WAuLw4wIZR3B4np/HTrQ2GYGJmlb8FJZiE9+VJt+xr6W1n2p8s27nrOW+02N5+VbbZcVYf5OrY6hTiJhcxNYn8NPvqQJDJWp2csqtPaMtclXqWCsWWnixxcbd1/JAI91FO0UYVVlNGB5J76hrbJKdZRcu9VWjXXOXedu9SAPciw+oTL5fSZDfn9vib066mwkDG58tnQZf3DUaFTTX5xIBLoIUoykyy71X/onYNtRDA1Vo46hG6N4oKu6SrzndGMRkMhGVFyHKXY71JGbB+3gaaIwCbBhALRougJDpQt9RIUKai+1KkBFA2zTMz1UwQl9hY/nIS/yiNPy/hiizErgbBltMYAplik4nVxL9k0jVUm0CnsxS4kuyNXNrLJmkXDFes7nd5eBGOAxEQeZSIKnwmmgQGQg4NGEGwlPtQTvJflmICxwwdVkXRjEZM4vBkWB0oTvO6Ia7tkbPlmgFrmjbJTkDRKILRsYmmtleDv/Dt12vuWUfsTpo2KS7O+NED8YNDoOLgX/2iMsMIuWwnh2E=
+  controls : []
+  code_elements :
+   type_code : 125
+   p_codes :
+    -
+      type : 229
+      enabled : false
+    -
+      type : 239
+      enabled : false
+    -
+      type : 240
+      enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x29f8144500a4e5ba
+  internal_properties : CAAAAAgAAADg8L/cWiybfCpfvzJmspOK59XaUGvolBtGE2GERVUZ1v7gU/mPEUwS+M/PZ6UkZx+53cAnr4lLHCFs/D5ikc0A+Ce0G9Gq58BTO6Kt/TPs3kLkH5F5NXeT9XojMLowWxt7OyfvfsyKL/RILSC6zC6FakoTUwD8uul4h0O2SWApcp7ZTeXbKKhsHOVVlRZwEC56fQzt31FH5qOzl9Rjdaw3ExdGZg/p8t3LJFWvry6u4gbg5EJApWsb9XTWtY/FHp3slplkjhufn60HXh4h0CHqEg0WdHiUIxir+q35G/mtHwnTy5zeNJ0NHTZPMVkKzEKQpGzCy4AcxACQdPGjkeWOY7tms4KD7g2c9cVF5F1XMpmSY47wofcpF73begvdOayHCpYOA7z/fTPileqtP0Ur4cylvEW7dB0cpK03ONyAWtdpuuZCIX8N7FFvIkr+5vyCJD0pO91rCo9Hb6hHBb1TQfgKlns7j48S8u2TgZppgKu+0uAOq2ovAFs8pw==
+  options : []
+ languages :
+  - fr-FR
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAABKff4sxysR+9kg8GIJ708iDvb5GJxqytSUKL54fomJ9xlu42EWUFv/+en+BSQDmdB2krqVslwL/1eyQDVw8sffQk7lF3aDfZNzV/+zROsnKAy1jaSejRR5UgML
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      PROCEDURE MaFenêtre()
+      gsStatusTexte est une chaîne = ""
+   -
+     code : |1-
+      
+     type : 34
+   -
+     code : |1+
+      
+      
+     type : 234
+   -
+     code : |1+
+      
+      
+     type : 165
+   -
+     code : |1+
+      
+      
+     type : 177
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+  procedures :
+   -
+     name : CB_Succes
+     procedure_id : 2290286934229756049
+     type_code : 14
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //CB_Succes (<sProfilXML> est chaîne)
+      //
+      // Paramètres :
+      //	sProfilXML (chaîne UNICODE) : <indiquez ici le rôle de sProfilXML>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE CB_Succes(sProfilXML est une chaine)
+      AjouteLigneDansStatus("-------------------------------------------")
+      AjouteLigneDansStatus("Profil executé avec succès:")
+      AjouteLigneDansStatus("-------------------------------------------")
+      AjouteLigneDansStatus(sProfilXML)
+     type : 458752
+   -
+     name : AjouteLigneDansStatus
+     procedure_id : 2290286934229821585
+     type_code : 14
+     code : |1+
+      // Résumé : Ajoute une ligne de texte dans le champ texte SAI_Stat
+      // Syntaxe :
+      //AjouteLigneDansStatus (<sLigneAAjouter> est chaîne)
+      //
+      // Paramètres :
+      //	sLigneAAjouter (chaîne UNICODE) : Texte à ajouter au status de l'application
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // AjouteLigneDansStatus("Tout va très bien, madame la marquise.")
+      //
+      PROCEDURE AjouteLigneDansStatus(sLigneAAjouter est une chaîne)
+      ExécuteThreadPrincipal(AjouteLigneDansStatusT,sLigneAAjouter)
+      
+     type : 458752
+   -
+     name : AjouteLigneDansStatusT
+     procedure_id : 2290286934229887121
+     type_code : 14
+     code : |1+
+      // Résumé : Procédure exécutée dans le Thread principal depuis AjouteLigneDansStatus
+      // Syntaxe :
+      //AjouteLigneDansStatusT (<sLigneAAjouter> est chaîne)
+      //
+      // Paramètres :
+      //	sLigneAAjouter (chaîne UNICODE) : Chaine de texte à rajouter
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCÉDURE AjouteLigneDansStatusT(sLigneAAjouter est une chaîne)
+      gsStatusTexte += sLigneAAjouter + RC
+      SAI_Stat = gsStatusTexte
+     type : 458752
+   -
+     name : CB_Erreur
+     procedure_id : 2290286934229952657
+     type_code : 14
+     code : |1-
+      // Résumé : Procédure exécutée lorsqu'une méthode PrintConnect renvoie une erreur
+      // Syntaxe :
+      //CB_Erreur (<sProfilMx> est chaîne, <sMessage> est chaîne, <sErreur> est chaîne)
+      //
+      // Paramètres :
+      //	sProfilMx (chaîne UNICODE) : Le profil MX concerné par l'erreur
+      //	sMessage (chaîne UNICODE) : Le message associé à l'erreur
+      //	sErreur (chaîne UNICODE) : L'erreur qui s'est produite au format JSON
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // CB_Erreur("Une erreur s'est produite lors de la récupération du Status","PC_NO_PRINTER_SELECTED")
+      //
+      PROCÉDURE CB_Erreur(sProfilMx est une chaine, sMessage est une chaine, sErreur est une chaîne)
+      AjouteLigneDansStatus("-------------------------------------------")
+      AjouteLigneDansStatus(sMessage)
+      AjouteLigneDansStatus("-------------------------------------------")
+      SI sErreur <> "" ALORS
+      	AjouteLigneDansStatus("Détail de l'erreur: ")
+      	AjouteLigneDansStatus("-------------------------------------------")
+      	AjouteLigneDansStatus(sErreur)
+      	AjouteLigneDansStatus("-------------------------------------------")
+      FIN
+      AjouteLigneDansStatus("Profil MX concerné: ")
+      AjouteLigneDansStatus("-------------------------------------------")
+      AjouteLigneDansStatus(sProfilMx)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAAB6ragasMBWLfpsSyU19J6lAvYEqFWd1xYOjmHr1XHVZOVmechqLo1vKvfoAJhHeXL59P8BudVQfrBZ/U9vpjDz5RFibMKKm/84EA==
+  original_name : _11
+resources :
+ string_res :
+  identifier : 0x1c51b7f60011e14e
+  internal_properties : CAAAAAgAAACyXVFaObH4lOGSEHJoZf1MD49w+XTw2LScZCP/urkWFwy+HYJdyQ3umA==
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

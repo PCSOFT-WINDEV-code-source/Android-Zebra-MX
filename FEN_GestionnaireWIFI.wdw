@@ -1,0 +1,362 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FEN_GestionnaireWIFI
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : FEN_GestionnaireWIFI
+ identifier : 0x2fc8bbfb27a83c17
+ internal_properties : CAAAAAgAAAAclvv8SeemnkoNobRM763Lk49PvH+nsK7B6lJYN/Lf7NoftL+Nm8t93sUOvGG4Vw7D7DaoHdeWUjk2Wo2uKBaOsaEwatpj1rvM0XGgwUVAkbkPHdZuErPvcuCjcbOtjH/OK7jlt0ESR2Xl11XOZWrRrcCu0+1n7eb71UUmbqr/LbPv598B6Ob/EYYOgV+H2TUEZR2OwZX3e2neI0hRTmgw/cRnZeEyGYmYmY1NsqgELL0qxHwtP7EJuiRh9ZMIKV9xJ9qG3LueWwwWr4fSiu3poO7ud1IAQKqWzFe01XSVcpEPWd9ZjPjpyW9dR0TKtzOpfvcxsCwIZ3Y9G5OePIWZojtdG1UEosSOVYPWEj2oRVmaIcjz6C9E1nr82oiBxBPsr+Nr+Dfc9oSBiqLzZfIx1h9rflr1cFk4WKHG1u6P3N/Qz/eNY8XTBHVNeFYDaNIhIqfbRLBvq5cOp659zndNhX59Ez5psd0vPmrTPlz0f8R1EPODEp4FQperv07WZya0BX+6aNxvEm6QussZAGxQPxL8WlXarGmWQMd0F0rl/SHIe3MVgDXaPejMEEvWDEqXYn06wESKvtOYKKjGK9jkhEG2mC8ebx/2yYCh88UnocsvbjWUh0iKKjf/c9ID6+cv8YXVEx7u0KhdADn5Bs/17nsiBkFytBganQ1MA8meeOCs5UXZQyJALedfkH8RPLyMDRpMUsM7R43nKRdjoviDYe0kdVcZfATaKADIfjTJqr0Pyg7WIz8VrX90ok+vH5xh+iqdXKvV/TpWehk3chPmMAjyE1CpTN3/vFqYCqiVwIqieQCiyewyZc+vZXyrlYhvuEJhADOvXE94gHkowFbiCo1YoZ9Ggs176JBhknnNDHQqSKJ9M3zFdKMejsZGEE9JR2koDqqQIkUZA8nHg6TfCFTAMuhEFkr7kNfpbeZj+ZPlH3qtA8UOm9FYIrBisumhz9q08ss+3/1lYLfPCh71kzUZigF4pf4JyOo9SaDyNif2GcvHBPxcyHOJwWLXkadPaPE0mwMHaXsMR5NqR/nfZlqJdcvdI0islzvdtMpWJgKRuuf8BCVwBqRGW5OEmeP0tYdNW8DEbPH73erX9IbEIR6AlEENnDKMrdxZuK0sCmC5y9YJPAPgS8Wbaj/1ZTfq1ej5L6xePgpDQCu3A8bMkrosi6l+/mw658DVjfVpxHu+9Zo6xStSw+ZcltArE7J8scuqHxr23+dln6lR1A/RW27jE0ZO568BsJy1tJeq33MZh2zBL/USpzAyb0TWMCUMeatFw5a6gxMlyLGcuLdu50ZHGViuJj71Zevp0QPSW5EGnCQB3k45gL6Q/OhVt2+cUVEByd8X4Uv8C8HKV7l1OljwteCf7h72yVcna5KcAK+Jip+SdAJNIobFmSqXehRU8h1NvNEHc3A2UAAaLIWsbPzF3wQNdC5hV9f2T+sYTZ6QtnBBD35RuCy9C8ZAyBX1AQ==
+ properties :
+  width : 320
+  height : 470
+  heightMin : 543
+ controls :
+  -
+    name : COMBO_ControleDuWifi
+    identifier : 0x2fc8bbfb27a93c17
+    internal_properties : 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
+    properties :
+     x : 8
+     y : 8
+     width : 304
+     height : 61
+    dropdown :
+     internal_properties : CAAAAAgAAADaYSa9e/ewZX5QHBVsiql2qfkDyiRT44dUknkaRvO8TMp/YemANOf4sFaWjul1bFxEuykcMWGxNvNxIMD/4G1VfEDAxLuDaU1Ellojd6qbJ2FErfz0ollSmXameXIwqdv3VnLoRXJFvlc/IHcuwD1qyBRdIxQ/DEfiz7BWIi5f7c+YOkyEoo6XNS/gORDAO2hKtCMyGiARXcDmn1Wc0goI1U7QcM4gebhHvdW2ujt5E3ZyaP28ViqO4g+pRS+ie2DE+3Bp4G4CW/Sj0zoz/s1tpgpkp37hIdFR0sRBh9CY1rlnR/CMU6LwAzgvKwp+QSNFXE2JfgEleCv0ATgpWO4uR/vVEOhkGBle8dDrOC7jm1veq5PPGzb9ny1H3E7jHBH0t2MphH3CjLZuPaxbBVVtyRF7azy87qxyNF/fB+QNr19cfE6/09UFGKV/Ne7Xtln6Ez3iZefXmmBk11afD8pso9x864BIW/LR0znU7+YB0q9anJKHvF1SwH1Px4ZBLzj7CaWOKO/Cg38nT3Ph6WQIc3L0pQe2vFJa7Vkp5o4u7hEtCNhva8FykJwBDTKFPbDep5oglYoGQGlaPJsWy+tBvDeuH9AXFp8KLNkxzJBlgSgNis+0sz3ZU9Xfg9tgVRs6bwJQGtrhiyKQYEawJh/nencsuBQgZDOKfwVYIWzxB5xDeHh3AEHGY2ewLGKkp3dKmQoZZ+6vL+l38uqO0Upo4NwZxzCHmesqvvu36F3k5HuPL2/TnN4Rsd2Jp5iQYtc7g+GHVdLR2IViWyanD64P6WS3BPzNuO/uM9/1w69xJgzUk6zJmkW8i44LqHWFAr9TACum66rHbqyuTl2qqeP2PgXAZd49QNs+aGCI2V9kNcQDh7hIo7DI5WYSeL46th8vsxeZ5P114tNPpQwoy3Y1cFqJuKkZLxfKhAkB0jcpfU2zJYL5QKMk2tQE9E6Hij4n2xidRXqDU5XQkomGcPZGaTCu6KwzN+34uwL66K5YIQ1oI+EUYjnOSnQIzEds
+     type : 7
+    type : 14
+    code_elements :
+     type_code : 23
+     p_codes :
+      -
+        type : 35
+        enabled : false
+      -
+        type : 17
+        enabled : false
+  -
+    name : COMBO_ActionReseau
+    identifier : 0x2fc8bbfb27aa3c17
+    internal_properties : CAAAAAgAAABgCHB1ZDLGokh/AEzyj9XFDILQ2cPCp10v6hjqGiDuifiNBbxONwyiunplHyxvFzK3FusQ1jJwXq/64Q/KlYtO6WIwAY63Bs1DTD7X1rbKHJLxBqB+7AKNWFmafGB6tgZ6ek8clkXNHqIJWH+p2LJd5QZmnaTfTDvYUcAZaZXVCB4tFmk5mijL1QrQOF4AeQEBBEMYrFwwJFxiaEyz2jwrvRkQO0N8s8GZnRrsxiSYy3Ufzj2mXV2rlpJXr/d2LfzsiBtH0cfsLg3twNkvBNJSKAeu6nNBoe1Q4O8WFPpcDiFPmNg92C7Zs6ngFHqUioCRhYQVBTg/Tv74sxSIdHk0Azrao+keXCmwmku8AjfVhOTXR6S+oJKIpbg3MKuNdGy62GjnWc668xV3IwXj9Vb9JIfz/N1qDxiC6Tz8Kw630+NT4tf4LFcl1zRFoE2R/ZB+BdO/1mtyJHYivF81V0vE+N+qaIfAOzJtACKyF/cnnn2LC5TECY0qpgc45d2ZxD+1mD1/jidSjwAEf3t2sDBoWgYtf6DKTf26Gd2rppbK80Vjy8mYWfO0oSwl9SipUgIPPJgLGtAf9uPYkglkzTzOISDdiVWVZYERdRP6b4Ja2TXxSADzkCLtHrwyTkjk2TyYb65tBcZv62T+fHi32ibm110yrRFjuHp5sNmxc3UnWLHQ7hFP4dSc28kf3BQv5ua4QM/Ox2PIEIxJ96bvR+ysKLq7HTudBn13pmHEWlJOG6zZjngmkzOZ3L0YQr43mba5FlUbXxgSy3F6wajIrDovvGR/CqSGwMkMiIsG+u7ptwZ6hQiLUr1a5P3RXXjJd5JJvwlxpTZQVOI6i/Gz6wNHKQ1N+c1HLOTkog86sX8JW2aVySWPcF1IzgGC3I5SQSv3yQ89/PinSQy+yD8eYoJHKz4HIHB4ejV2opIHEmI7wj5FxRmhn04izbNjcu47F+p0CIHwtr/BxIvguFInMLqLe4mzj3isU5kAmBwTaTETyWEsJvxFiaR0yfqwPV/pysO76/16r0jvIiA5sjCMuE66iS+ndchK3BL2rAyywDxoEb0+unccwlvvuRQF64ex4aiiCfYoQW6GQ4I6isuQ1KB5BiamHwyqQCgO2Nj2rtJ3OEv0BClUyfZFicqaFMSKS78cCWxpeP00faKslkJt02Z/xmfxJ/KBnSm0U2pjZg73FlBuU6H/1vhbtZmHOw/y8kotszHLV6+uApA9zlFPQ92GAnnVHyds40bem0nCvh6Oikw7NAUUxafzIFC1k2pl3KBNlC0eiTTtYe+epIqMooekE0EWASaoajhwIfrBGxeBO3nVPtpWjKk7T/EwTF4LxjabG+bJBUGyi3mcwrodu6Gt2lfvIfsS4mfQ2oc3YIvt+6ThPjZ/CgNSlqiudHVvf+m4TJpW0YZoB2WBto6uZPCGlXgzCylndIfywzmD/uFEnJOGo0XK6a4it3fis6AgwWHLyAFGCZcKobXUSaIZbaz03q1vJLV+IiuAyzDJytokirqYQ/Ny64BGVmEgP6XpifT21cOo4ViE8m8Uq0v+tXWblpyCHSvvxPi3YJe7wUoPaXym9+J4bhIvmcuxcUdfQaWlwyTKT8hXJEDfPLb56ifjxGBdp9tqryNWcYocQ3HXFNuKb+5Dos8+R/av+X6QCBR1C2wpWYrHGkonPHSWtrl/btsK73ZiQhBu1lwrD9Dlm3gbaCixGdVfR4XVMT/OANGmtpaLYbvz3Em2aSwCCZ949TIpoJIroxfNXE3q9RW9OKW0PQEe7SuMsvnPZUKu/kYcghZeye3OtRqpNH6DGebC9fYfj+CfAN7xWDguqlAK7jkJUw759mXRW3vBTqHitAzsIHuoMLvcJYyLXa96Bq8YEmMenCF5nx5ozjF/YHEc4XO4F85/cdlRKXDVOgDp2toDXKA8HHVESpJSZWR/CL+qkaqMR691cCot4AE6Waf1yNklgtz6uyLltbcbF/ksVt5wSl7EwmgXrjA8wfjhsPvw+W1INqi16Q8iEh7LaZcxWFFImOup4FI2+20zdK4VCd9ziyXpD7eaHMmoERqhhf/630YfSu5jsAUOdc2hgykbjXM2WFYXaWUN4BYk09hLAjf2gc/4GJ6PXgUkkVKA05hiKNniT/CNs6Hje5CVfOA5KUP7Ew0wF2nmPMoh+GhZby1EPwz7jb6yiehltJgn6KsmcvehdgBI8WCTaiRCUnwVmzBUbtwUs3YLiDA/z1N2Xac9xNO4mV+mdYhxga6gXPnQbcMhcSsswgu/7NB7DSjTJUg3jRvFcMFyUMSSRtdbk6zOmZmZFyYBLx2ycNkFhAfx1tMjFswApoGtes6RwjfWOSVjiYtaF8VON0M4aLgNiC+SiGnQszsADWT2i5PsYUjy8NUP3bXKS40NnGzDzWE3EPNFHOMEasb5Pj9rfycUYreewBdBLW/Y14spzDihqSiBLTkBHjzt4YmtI/7/dCY4OMiPhovgPJysTNqyuF23oKTe/E0O10tR1Eo4G7ywYaCA6N2B75F2mBIgfz6mc6y1/A9Sd3DlJSDSjeW5TZbxCCjvC17Eu1aiw6bbeehV1M4pgRLK451j3kE7yfnOv5To24K+PKVegCAcd0jc4A/jXRNxkURsAE/n41PWQg4n598g7wAGLmNpgBsGEuJOSthwHi80F9IvYtCl+C/YE7HTW3HG2U5+lgM=
+    properties :
+     x : 8
+     y : 77
+     width : 300
+     height : 61
+    dropdown :
+     internal_properties : CAAAAAgAAABy1EtiEuuJrq1KDwHNMTtlqURNm2WuVtJGc5B9M3o/vEBItMG3pCufQLnlD+7+6CZO6urS6o2L4JF3fS4hd+wSAGu3e9lOWteeYIITEwrjUskSs1WeTTGx+7etywGEMh6OhLK8E/6G8guH5JXodJ+C0k10ZLvn4BKTizLbGLexP+Vk4GL9l8ormxqxX1StxMGvzVpD4mzFnsJ+5JzWcAQCXjWOOAWqWuHmwdv7e1P1tLn745lK1Psh91h1mavPN9eYKh0mr++SIJ/pZc6Ku+Rz45IgARqKZqpp+GZWpiVLV/qDHFXUg8NNiyNNACBi5tWuNMhVIwA0WveSAM2al/G9my0m3Tcd/cV17rVlmv5UufrKUnJbfB+bgOLwz2Cd/RHrX2Dqa3qp+iW51uA6nP8YYT0lFyBcsEhgSwFxSU5gPuSyZlHS20cO6nV26LHV+gF+pp2cTuySSyM3W6qrPGQZs9xyukLeUMOaTvze3NySj8CGqvydMv/nvqS9J+G9ac7O4HLqVsc7JIMGx6xTHghmbSSsia/vmv/cG4bEfe3JRM6CBuA4cCaG9FafjmWzKzrW4keyi70BtFqPFw6vWKqZMKnUBJoztp0RCanIlNVfYL/Xaf44HwD/8nykbh/BcY3QFn1Gd1MbFl9eHYmFXzMr65KCS5siqkGZ8J/h8/0NEXVC4z1LbxcsZSYMrr/r4lBpwyglDpI8nvSHV93mt5KxSJNLB8uA2F6QSf6uKF82PedKiB8rmqpJKFjh6inLNt6gW0ukmIM4MD2P2ELfRPNwsZwQpTO2EklnJI7RF9YZFdmq1UmN2F+O4Ipl0+DjRlF/oOqAVD1x6l7C+GryTUiHDl0pHGaSZpsy62zt4SWGDi52LuAMFVCkHUIEYrVjJ3mOXcAnMDeBGd4Clf0UT3xcxv/vZgFA0DI6rPbHUcCRY+tZqKD1g/4+ob13TE+k8ft1YYMGxlLsx7dbmtT2adYvq/+IBcqR9A0hSGVhPFBPLZ5XLZI+LlCDPk8QbeiQZW73SJ+U4SS/LPLXz/dTQQ+8uxCYP15+UCN/KcFhMn0mRp13IWe4pneAsp0sEeunXKkgO+BwFaRhhfP1diVIPX6jIrhSCVUlDxzZSQZQCMO3oxWUWd01A8/g7vIIWJZiGShyUS29JekypHYadteuT/n3G4FDxdlYz4UMIVXThQ+PO1OGlIB3eGbp/8JXByUJS9Aoye8zC32jVRfZji76eohF2upbkIwaXEt1yU+bJvF+BpOLFHAnxbRFf5C45jX6RlaC1ceOGIQOwzi6+Q1p
+     type : 7
+    type : 14
+    code_elements :
+     type_code : 23
+     p_codes :
+      -
+        type : 35
+        enabled : false
+      -
+        code : |1-
+         
+        type : 33
+      -
+        type : 17
+        enabled : false
+  -
+    name : SAI_SSID
+    identifier : 0x2fc8bbfb27ab3c17
+    internal_properties : CAAAAAgAAADdD1KMiqxC+/+mJdF5yZjmsskrvK1WBJMkqBuCBlxFDMVcqfGcd9NKwcK5OTsNJzYLodTPqTeBkfM7Z+QdKhZ8BXTNDpQ12KBgm7v/mP8FY/1McC2cmgskvkA9I9b/a/i4Ilp8D9DQ9150onAWKsLuT7rD1hKP6FJlbeLk1cvyWjbk4r2875L6ZK2Pxd+KEFh2qkzeIZNckEOg39LMFx1JSZAtfjxWMOQwfKiWI/jBDf98aNlFv6qeUodCY6jtmSmkmiz1p3fzJ8aBbCPuKE7AKFddqfpKuFYbucY2FczVhGMWnQIce2hTgRUj6ELuGvsggQY6OImh14lmYOSVHESng45N8GntgivGc5rYmwRBzsvy4+c3//DB1DhtSEnptbKENCZyy0bR85PVMNbFR5TVViDP+8SUCW3x8FvG0e7h+EnWzgZHq6uEmJF5TKLdhzllHKMWQrQKpef8CqlXptjWLYnfBcVqx90f0skLGd25VhjfIndeaks5+KsK8XYn6C3+QL0gFrPwLLEIt4OPGQeSZoIzqvVEZ7+YQxbOFgaqMc6pnVGmPKgRQvFpLzJtJZyNEaJGJEVnrZCAbSpujRmyuUtjCth3xFspLxHbp4NQTAXDYzy5eHDNPpMG2IbC9LHPW/tx2I1KGdUH0JTIgRldhjBrUqPfS2uT168IfZ0yBV1yEq6SDyr7k+pcVt0MhbK+dWHGqoSVqM8aflUK9KH/j1L5PN1QziHFde40Cp73RFhwOVpbGshLk/3whHkbBeMSzzV95ARSVNlWx92ee9LcjoL1vif7gyzPQYUmPFxrK2T+/NqZmb6uwEGH8Cm4sq8aKrwA90MQ8waDjovc9KeVaz3IddY+6drmi6Tzzb26sR03QW5v/Eli3R0bBWlGcBLf+nxJ4xNQCCKpD0xCIyJGff7XlCNFdhetTKMEf5kfkZmI04PpS2NKw4vOjQa9rTV4klWKPDs/OFlFDhKIIKj29Qlo/2WvCIzjI9H9fPkEi2IYhiuecIwaaTa5HIk2KYaKNGSXFUG9wXE5GGH1dPuCiSYkM9SG/iF/2MsA86MvW/gFBhAEN58oQBJ9z1bRDlyTnBUGnd5PVCXW/Cr1g8jWgd+cVHFVZ0O1T3GWO8m3G3wsQ2x+14d536I1pXaATKHk6WEUiza38kOX9L370PrfsaRnJrRZbhGSJGW6cLjX7yHzgiFU71+r1V5Z5N8xyQuv9p1kP+FLYUYkb5jYvxwFjSUES8ozxbGA/0C7WnDfG7AzLt64eTcSbYJKu5yDzQChNHmyWsqfRdo77oxs8EbvF3rVxsTisjbM9bd2+4zZj6sCG/SZ+CUNnKq4o7pMwPjsTRy+ZA8lfGB6gGRe3KKFFf0R7w/lLMYmMyC+pBSMalQSTLcRPKqb0Rfb+YCTUgVdRXEqNgWawyViSUdbAIKiPm6/N+w5aZpbdlVitzXgu8+89c9w/PELO8sdNMzVS4cUo+gfxYCWGbLQLYlHgB2aMFQ3xCKkDnfEj5dvZEn0/j78UCXbZC6icMeNJFTHRNZvdENKraNUiMdh4FVfYeXVY3DpvqSocK+4tthc5KvtoJ02nnQTbTltBfK4439P4P+kAyHK/NkPWINJKaRLG7y0KxzrP+Xk/b1wTZsRovITzodo4z6NdvbwxkKRj1mfHaBsVwyEnumyfIfiq6GhNUlr4mtiJYzWpaB8hfhVrd5YIdbC0acvHSOT/hleDYdMN6C619aFh7e2vO62Vgni/bZUn3FJhHnbm8WM2sNPtt0CzIWdiWUFjP/FlVnBNO6Dgs/1uVBH50VDskZmasqn1QWn7fvOM82yQulwrDu5w9J4av2eH8FuGaI2l8OHn4at2SrChKamUzgBthNfCqdwvHNH16BBq/wDtSNMk0kbZDyO9bKWW4URS9mZRsBqZGsaSqfyNLxjA6JRGPpZHKLG
+    properties :
+     x : 8
+     y : 146
+     width : 300
+     height : 63
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : BTN_Executer
+    identifier : 0x2fc8bbfb27ac3c17
+    internal_properties : CAAAAAgAAADqtiS4aQmk4ZQ3dqVZt8bgDPu9wJq5JJU0m5DZJfCJLRpCl5MsgyLiCqRs1uioKTXO0pyYH5jbirqBeMJ5fC2+EMvFOHpBwd/+6XC8TF0tmdqfMzat9cQG0T4xBx0hdU3xMbMyoph0lQkntSmvHFlSg/WCTCU+/1w+l5j5B9cQO2FsDymrwKV2FtjKh2/XzznkZbceN104xeLZDzrdDyhy/upcb+89kBipAaBHxc68dYhlOe2ek+FLIMfpXPv+nKu4CwBZqKQGHCWbFsGiRHfCtXfHZn+lg4p/QqnRjcAfbR2od5qRkf/+jJeqI+sLqNtS1JJuCAVW01QFPgYQlBLAjjld9FoY1kLKKTXd2XLsJIY+8x157KFHq1tPKUYxKRK2OcxoDtDlF+zjeagLAxJA4pIhY234VnQaAYtHwt+SgB/Jtlfpm04i0msgikVC/U4LUbUXDMU6ScwkE00Imo6GWmv830qVm5gnjwQZOAwqJtGiouL5dHMoO2+nCWjO3Lq3Lqm83WZlXxESzOy5Ury6GCFqcm0iQhLI0f+ql+UxYXbn8Y5W/JMLuKGMLMCYk1NFr44l4u1joVI+nbXbLHC/AL5i2cE0xoMxXPENIlyfkMVLLv0qhrMnijHRLuTHkEEggb7XsH37+mKJzT6YT5GhvXMt6OWmzrmaS91Dwq9SjqR24atVt9KqPLIrCVKlH7TKJZy5U7fqyk6CF3aogAqXSRP8IRyH03bK3KCt1xKpEbQGWwOQlVOnjxAW2Zy4wWR1rR1tnfwk6hyVdKxIrO7JAQQhhw0FrmDu67q3qQlJbb1nR6pcxxsFv61ebqiKgfldT9UmAfEnb/JdDNjImaQUAOymEb/tJp56LHzPWLFBP5IYfdPLDEKurhVOwirLg+Ry7t7EeYgxps1/RlTZ9OBLSYck9Nxn0sIGxmOcDvvGUCNBtOysAXNOSKq/pn/+epJuZMccW+AVoXyu1Phemh624bAdRs+lYeO8YirIpa0W+85WBpBWYnbPidaVFeQf0raaAnlsYjwTcz+Jxp9OYoIp3ojz+niV/V4gvCm2pSbd7VW84NyRk0IEqzhtyAqHhgn5MYMM9warBt65rqZuoZ4Y3hSbOyyD+l26gCmSKt20wgxFjo7VmbaqN5d+5YXFPdzrLvD28Aan/6HAMYu2tvrLfbAdmD0/hFqFRIaaJdixKf6B3R6Zgtq4SNM5F1apmTO9lDd1sddwmZMPSwa//Ogty2QKivBm80ro4xW8Xjcw6U4QTCvX3/oC82P8DHbSJc4gJ6Mjlc589+G62Y53ZNTjWpxSnCTFABnXtX7DNTpoHZzCgV8igRIC56A7uVlbSKN0DAG4VtzyTPaT4W/awvtryUn6ehvFNeck+yl3gdiyKjz7M+RpTWhLMv2164jTBdXJIm0qB0g6KoGXV+V9hIsmeogPdNEw4n3tpANsHyvzWf97
+    properties :
+     x : 90
+     y : 217
+     width : 140
+     height : 31
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         gsStatusTexte = "Exécution du profil en cours" + RC
+         SAI_Stat = gsStatusTexte
+         SI COMBO_ActionReseau PAS = 1 Et COMBO_ActionReseau PAS = 8 ET COMBO_ActionReseau PAS = 9 ALORS
+         	SI SansEspace(SAI_SSID) = "" ALORS
+         		AjouteLigneDansStatus("Veuillez renseigner le champ de Saisie en précisant le chemin complet vers l'image OS à installer")
+         	RETOUR
+         	FIN
+         FIN
+         
+         // On commence par créer une chaine XML par defaut du WifiMgr
+         // La documentation du Wifi Manager se trouve à l'adresse suivante:
+         // https://techdocs.zebra.com/mx/wifi/
+         // Il est possible de générer ce fichier manuellement d'après la documentation
+         // ou d'utiliser l'outil StageNow et la fonction "Export to MDM" 
+         // http://techdocs.zebra.com/stagenow/3-1/about/
+         // http://techdocs.zebra.com/stagenow/3-1/stagingprofiles/#exportingstagingprofiles
+         // https://techdocs.zebra.com/stagenow/4-2/csp/wifi/
+         
+         // Définition de l'action WIFI en fonction du paramètre de la combo box COMBO_ControleDuWifi
+         eActionWifi est un EWifiMgrActionWifi
+         
+         SELON COMBO_ControleDuWifi
+         	CAS 1
+         		eActionWifi = EWifiMgrActionWifi.NE_RIEN_CHANGER	
+         	CAS 2
+         		eActionWifi = EWifiMgrActionWifi.ACTIVER_LE_WIFI
+         	CAS 3
+         		eActionWifi = EWifiMgrActionWifi.DESACTIVER_LE_WIFI
+         	AUTRE CAS
+         FIN
+         
+         // Définition de l'action Réseau en fonction du paramètre de la combo box COMBO_ActionReseau
+         eActionReseau est un EWifiMgrActionReseau
+         // On sélectionne ce que l'on affiche en fonction de la valeur de la combo box
+         SELON COMBO_ActionReseau
+         	CAS 1 	// Ne rien changer
+         		eActionReseau = EWifiMgrActionReseau.NE_RIEN_CHANGER
+         	CAS 2 	// Ajouter Un Réseau
+         		eActionReseau = EWifiMgrActionReseau.AJOUTER_UN_RESEAU		
+         	CAS 3 	// Retirer le réseau
+         		eActionReseau = EWifiMgrActionReseau.RETIRER_LE_RESEAU
+         	CAS 4 	// Connecter Le Réseau
+         		eActionReseau = EWifiMgrActionReseau.CONNECTER_LE_RESEAU
+         	CAS 5	// Déconnecter Le Réseau
+         		eActionReseau = EWifiMgrActionReseau.DECONNECTER_LE_RESEAU
+         	CAS 6	// Activer Le Réseau		
+         		eActionReseau = EWifiMgrActionReseau.ACTIVER_LE_RESEAU
+         	CAS 7	// Désactiver Le Réseau	
+         		eActionReseau = EWifiMgrActionReseau.DESACTIVER_LE_RESEAU
+         	CAS 8	// Désactiver Tous Les Réseaux
+         		eActionReseau = EWifiMgrActionReseau.DESACTIVER_TOUS_LES_RESEAUX
+         	CAS 9	// Supprimer Tous Les Réseaux
+         		eActionReseau = EWifiMgrActionReseau.SUPPRIMER_TOUS_LES_RESEAUX
+         	AUTRE CAS
+         FIN
+         
+         
+         ExecuteWifiMgr(eActionWifi, eActionReseau, SAI_SSID, "FEN_GestionnaireWifi.CB_Succes","FEN_GestionnaireWifi.CB_Erreur")
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : SAI_Stat
+    identifier : 0x2fc8bbfb27ad3c17
+    internal_properties : CAAAAAgAAAB4D4PLlRwCP2ghuoYvm9NmFJ0rxDYtlsHEOiRcFNLRWcFjlGUt1gxAD0EbHr51IXVG8SnSZXCr4+Ro0+ecQ7p7qopviaTBUYJOwe40gp0WeUVPntj9PuNDnGS/7b3erWbjYg8uHRX16YW2MQLYn/FvLcWlaIvc3zVEUKGAdQYzc1+TVyHGo0mDJnLO6Z/vQiLttGaEU5zFC6qJ8d3oqRbEsQCmFWh7ES2cBaY0XBjZVkeOitEmlQWL/gENbwq2EpER4GWkfl33zvq4/OVXXJaH1H52mGyIXvlXoEx8Wy0SwngbdPtKORVqtErD971/O/0WitiX2vbGIOitDlj7++o+kEdxVuoWdFEgCExn6KtyGLO6ctn/1PsfgghkoVeSejB7V2Xr1wFR0N0G7JLtuHQq8ARS66FaU5PfKcJ4HrxihhdMVLLbTBTk6mENz+LiVUfdeFLS4r96bQFI3V+hKvkslxptmo7yhPnhJv2f5f6aIrt+OnkqCWN2QARnk2TsbeoASGZMMx/+G1HSu9ROqoa8YsX2B6Np3fgscG2QLzKYkZmIfX+c3i+zqLFw9jG3vhYEG71C9DhkxPSx1jSg4J2XscpunpXwoP0D3VPi8Cj3UaRsAzevYVwNwO3gl0Qf+aa4zzfRXSgrxx2cIZ3ANClfkDJ3pz/RXRzT1ouGwPGPf84WruPV0i7ima0fPjlvGr8hhCRZzVQezj9hYRQmZLZeIksOxiMh2x9R2mfxbEBHC1Dam2ep1sUB6Ps85cz4sPdEM616KTmWRMjm2yKi/emsP2iWOSUQt4K8+k6HZZcKq+oFX2gnApT/9068qTIw+Slf7Gfre0WN8RRax+cKDNrxfBpCXErfm5klYamjfgugh7P/jkd0mrGeSNVnPh7Nv/mmbBR+w4H6/RlzC/TTTH1g1LYoi5tGi4ny67WVpiQNHfM488OKcsJxU3o6YJS4eSrotneEsOnbaI1gLPctoDZxvV7270iTCpLA10qn+mvXaLg2m7vnBhDEE19rGbMSZ6q6RXlOD61RIgtPZ+lTUHjYGxBPn80rmST327Ua8t0Ti9evivt/4ARikfeGjQ/mo22oZeSE+XkojuJcVRM9N81kXTsYPBVfMJUtXfa8ZeoKe9gDpPdd9V7r27qm4aT3P0vf2iQkTbdCuhul5OhyKPsHpkFN0pAM1IYqTxxKJgjhNvBIyTwnH7JtYi3+o0MWUzxR+nlkRda9UK4DqFBtoXENA/8gBxQXDiyBzopeAol3G4O9Xgv1W0achrJ4ng++fET0wvKhzD2RWvmVeRmXn6CRTvLJ10N+NGuAX41Tumg/2ByfDZUNg7Wq/CNgrxBsWywT766Jh16TTt5fFXD9ETKdz6agxyYtva5vw5x/+7Q8Lb8HnAeZVj7OXJYuYSGbFo2/a15j3BgS2asI/yCCc8GZwF6YuJ98ZJYRJJUsa5PXp4OrNkYxG8T28i/B7rDLHOKFm0op9DVN7Ih/mAYu805nydQZU0J97SYemOGFg3IlhhrpKIrNrVUdjJeYbdiJxTrxUO4KfSCw8dBQk2ArWbzYJjeJ+PrqgaeFMv686H5sU+bowLv8La0aC+jpMgQyYiMAylgIYe2aKwthx6PIOk7tDp360T3wCb7gGTOhfSLYsqMmuRLT4tkJ880E7V9arY0jnVzKHFGuH8DzqvMeI0gtPX+Q28DsAFmXY+VIv61P7tFrNHrefGGyNoSJ5Ur5f3ZbC2RoHCn0e2VbWTsKh1g0irIcmlhjMSuUqjqCh+NSkAUY37hTubjSauyqyvBaT7BBA9B93jesaw0QROw9XenIM5Y9tC6AB718P/BTTVJSzmIq7+mbcsG0RXooAZjXu9Bl1FhtvEIoNLQVevTsk2uuFMjNcPSJ+iHltxo/9a4xlvjs/1jFYcaW1A3UqzUrQbTAQdPLPW0YWyq480HwJQKCOVoyZZrjSFRupvkimWqPGz5G09tP
+    properties :
+     x : 8
+     y : 256
+     width : 300
+     height : 206
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+ actionbar :
+  name : ACTB_ActionBar
+  identifier : 0x2fc8bbfb27ae3c17
+  internal_properties : CAAAAAgAAAABt7iVJxcAVGuz7k+VIqi2ICohsqd5yRevXmSmBMNVxf4Onr1fLZgD2SvW3qIW7vBf3hwlbVcti9tshki8cxUvG/qalQOszOmLzZW76gssR6FjfSu8xE42tRpRXQ7zRLaQmgjebkPxBXF4lKcSJOB9QiUofrO7IEOcCdoi4lkeahwplVMVYPj4T13O3QYBdqcuF86HEubrFD+1RaftWZhrLFWqmge2UKcar4IffyuiILcvwgTrDyb+KgwOA8uTkSMvXfppfQGBzPhXYKmYrkwex5V7Bp65taDY0Sr8VPcA4dicHU7tBFncp2O2LseDfnyVZb9rGzaozMTc5Up1fI4FRK0CVuRu2bp+Igg0lQiSXj64TwWdq96WvRICCEQgDRrz6ZkDVJJunHyzGF3iyFcUKRt/FlkCTKPKzfKZ9WI+9KLvfsylBPuNWsF22CHPBoMU/VtyK9p6UDp4bG7gOHRX5itS3p12MBj1sHzckWKLSLtNeGguwNJGfvN+MJ3gewRDb5GH5P9tnDT3fBLjBqz/Xz/s8CnxIVIDvUHQeyWO7DhUz4hgbkv9/5FRUlxm0XM4SOlSY7ppSSc=
+  controls : []
+  code_elements :
+   type_code : 125
+   p_codes :
+    -
+      type : 229
+      enabled : false
+    -
+      type : 239
+      enabled : false
+    -
+      type : 240
+      enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x29f8144500a4e5ba
+  internal_properties : CAAAAAgAAAAHht6W6CUWQzfdHq1OPyt5wYdyoqOtyQDvf1RaeJ/IoRYVgon6N/KdIWx6dZFgCHXUOVtEAR7H6XOZ0x+r2VqhiPONZ8NrMVYZYlm5z73xZfWM7RWyDB/iTZ4jcUyfoM4Ke3OJjgdGO3QVlGQ4OZtZ/AHKIhYZI+MUElL2H5Z4ZgTJKa8T720MsqPXrWyJIHh4Q2Q7pQFdoqvpZESeyK69RUJDl3Xg4w9HesPi8ippIgwbe7LzZsSiQV6zhNpMW8P+Ft8rdQ5FAsDH7O8jOppsBbaC0fJnGcUv353gV0TEhU07gurUw3Jp80yjbVqnzxmpU3MiYWF1ZX40ftg/4AsnAtCLu9fgxz1igVOE4qJeRWBxhSgjP9cj4OysLlYuMWj2911TLRL1ZnykvveTdbrh6+rptRB/u7a3hKcDRs1W6zlcDoKHJhWCTvBjzsyy6gdjWHPzpfhjR2Y5OpmoFh0fcXCrv6MI91L4LkaxTAJo
+  options : []
+ languages :
+  - fr-FR
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAABKff4sxysR+9kg8GIJ708iDvb5GJxqytSUKL54fomJ9xlu42EWUFv/+en+BSQDmdB2krqVslwL/1eyQDVw8sffQk7lF3aDfZNzV/+zROsnKAy1jaSejRR5UgML
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      PROCEDURE MaFenêtre()
+      gsStatusTexte est une chaîne = ""
+      SAI_SSID = ""
+   -
+     code : |1-
+      
+     type : 34
+   -
+     code : |1+
+      
+      
+     type : 234
+   -
+     code : |1+
+      
+      
+     type : 165
+   -
+     code : |1+
+      
+      
+     type : 177
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+  procedures :
+   -
+     name : CB_Succes
+     procedure_id : 2290287097440844823
+     type_code : 14
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //CB_Succes (<sProfilXML> est chaîne)
+      //
+      // Paramètres :
+      //	sProfilXML (chaîne UNICODE) : <indiquez ici le rôle de sProfilXML>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE CB_Succes(sProfilXML est une chaine)
+      AjouteLigneDansStatus("-------------------------------------------")
+      AjouteLigneDansStatus("Profil executé avec succès:")
+      AjouteLigneDansStatus("-------------------------------------------")
+      AjouteLigneDansStatus(sProfilXML)
+     type : 458752
+   -
+     name : AjouteLigneDansStatus
+     procedure_id : 2290287097440910359
+     type_code : 14
+     code : |1+
+      // Résumé : Ajoute une ligne de texte dans le champ texte SAI_Stat
+      // Syntaxe :
+      //AjouteLigneDansStatus (<sLigneAAjouter> est chaîne)
+      //
+      // Paramètres :
+      //	sLigneAAjouter (chaîne UNICODE) : Texte à ajouter au status de l'application
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // AjouteLigneDansStatus("Tout va très bien, madame la marquise.")
+      //
+      PROCEDURE AjouteLigneDansStatus(sLigneAAjouter est une chaîne)
+      ExécuteThreadPrincipal(AjouteLigneDansStatusT,sLigneAAjouter)
+      
+     type : 458752
+   -
+     name : AjouteLigneDansStatusT
+     procedure_id : 2290287097440975895
+     type_code : 14
+     code : |1+
+      // Résumé : Procédure exécutée dans le Thread principal depuis AjouteLigneDansStatus
+      // Syntaxe :
+      //AjouteLigneDansStatusT (<sLigneAAjouter> est chaîne)
+      //
+      // Paramètres :
+      //	sLigneAAjouter (chaîne UNICODE) : Chaine de texte à rajouter
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCÉDURE AjouteLigneDansStatusT(sLigneAAjouter est une chaîne)
+      gsStatusTexte += sLigneAAjouter + RC
+      SAI_Stat = gsStatusTexte
+      
+      
+     type : 458752
+   -
+     name : CB_Erreur
+     procedure_id : 2290287097441041431
+     type_code : 14
+     code : |1-
+      // Résumé : Procédure exécutée lorsqu'une méthode PrintConnect renvoie une erreur
+      // Syntaxe :
+      //CB_Erreur (<sProfilMx> est chaîne, <sMessage> est chaîne, <sErreur> est chaîne)
+      //
+      // Paramètres :
+      //	sProfilMx (chaîne UNICODE) : Le profil MX concerné par l'erreur
+      //	sMessage (chaîne UNICODE) : Le message associé à l'erreur
+      //	sErreur (chaîne UNICODE) : L'erreur qui s'est produite au format JSON
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // CB_Erreur("Une erreur s'est produite lors de la récupération du Status","PC_NO_PRINTER_SELECTED")
+      //
+      PROCÉDURE CB_Erreur(sProfilMx est une chaine, sMessage est une chaine, sErreur est une chaîne)
+      AjouteLigneDansStatus("-------------------------------------------")
+      AjouteLigneDansStatus(sMessage)
+      AjouteLigneDansStatus("-------------------------------------------")
+      SI sErreur <> "" ALORS
+      	AjouteLigneDansStatus("Détail de l'erreur: ")
+      	AjouteLigneDansStatus("-------------------------------------------")
+      	AjouteLigneDansStatus(sErreur)
+      	AjouteLigneDansStatus("-------------------------------------------")
+      FIN
+      AjouteLigneDansStatus("Profil MX concerné: ")
+      AjouteLigneDansStatus("-------------------------------------------")
+      AjouteLigneDansStatus(sProfilMx)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAAB6ragasMBWLfpsSyU19J6lAvYEqFWd1xYOjmHr1XHVZOVmechqLo1vKvfoAJhHeXL59P8BudVQfrBZ/U9vpjDz5RFibMKKm/84EA==
+  original_name : _11
+resources :
+ string_res :
+  identifier : 0x1c5bf8e80017f9ff
+  internal_properties : CAAAAAgAAACyXVFaObH4lOGSEHJoZf1MD49w+XTw2LScZCP/urkWFwy+HYJdyQ3umA==
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

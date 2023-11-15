@@ -1,0 +1,453 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : COL_ZebraMx
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x1c51a8b700875bd1
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAADDK+DR+a/rjJTFfnvI/fUXvEk0WnSJ9c3QUaCp6wGJ2jMIf4fncVKJRY9vJzYA3QY2iTe+9nmkDuH/DNY8kkVXjebgcrlrYQzIzQJ/Ru+lCeQj7tUbCqLgAH5Hm3J2c2H8S2diyNjyimmb/o9jA+m+MRzYTK0Lo3x8nNwZarra3zpT4Yhmc8R0xVqgrv/4cN9pBwwNA4Y6LoLy6GMKiPgdWKUufzSnaI9XzzxD3FFDbQyUoa7X6x82oh4d+SVM6byuEZjoeIDl+P4o
+     code : |1+
+      ////////////////////////////////////////////////////////////////////////////////////////////
+      //	Composant Zebra MX : Mobility eXtensions
+      ////////////////////////////////////////////////////////////////////////////////////////////
+      //
+      // Ce composant permet de bénéficier des fonctionalités avancées des terminaux Zebra disponibles
+      // au travers de la couche MX.
+      // http://techdocs.zebra.com/mx/overview/
+      //	
+      // La configuration d'un plugin MX est décrite à l'aide du format XML
+      //
+      // Il est possible de générer ce fichier manuellement d'après la documentation
+      // ou d'utiliser l'outil StageNow et la fonction "Export to MDM" (solution recommandée)
+      // http://techdocs.zebra.com/stagenow/3-1/about/
+      // http://techdocs.zebra.com/stagenow/3-1/stagingprofiles/#exportingstagingprofiles
+      // http://techdocs.zebra.com/stagenow/3-1/csp/app/
+      //
+      // Le composant utilise 2 librairies externes pour fonctionner, ces dernières doivent être
+      // référencés dans le Wizard "Créer l'application Android" à la rubrique Dépendances Externes.
+      //
+      //	- API EMDK Zebra:
+      //		L'EMDK permet d'accéder à l'objet ProfilManager. Ce dernier permet l'exécution des
+      //		profils XML MX.
+      //		http://techdocs.zebra.com/emdk-for-android/7-1/guide/profile-manager-guides/
+      //		L'EMDK est disponible sur JCenter.
+      // 		Il doit être référencé au moyen des attributs suivants dans la rubrique Dépendances Externes:
+      // 		Groupe: com.symbol
+      //		Nom: emdk
+      //		Version: 7.0.0
+      //		
+      // 	- WindevMobileMXWrapper:
+      //		Cette librairie simplifie l'intégration de MX dans l’environnement Windev Mobile.
+      //		Son code source est publié sur le repository GitHub suivant:
+      //		https://github.com/ltrudu/WindevMobileMXWrapper
+      // 		Elle est téléchargeable sous forme de librairie sur JCenter.
+      // 		Elle doit être référencée au moyen des attributs suivants dans la rubrique Dépendances Externes:
+      // 		Groupe: com.zebra.windevmobilemxwrapper
+      //		Nom: windevmobilemxwrapper
+      //		Version: 7.0.0
+      //
+      // Cycle de vie du composant:
+      //	- ZebraMXDemarrer: 
+      // 		Se connecte au service EMDKManager et demande un accès au ProfileManager
+      // 		Cette procédure est asynchrone.
+      // 		Si elle est exécutée juste après un redémarrage, le temps d’initialisation du service EMDK
+      // 		peut prendre entre 30 secondes et 1 minute suivant le terminal.
+      // 		Il est fortement conseillé d'empêcher toute action utilisateur tant que la procédure
+      // 		de succès ou d'erreur n'a pas été exécutée.
+      // 		A placer dans la procédure exécutée à la fin d'initialisation de la fenêtre mère du projet (la fenêtre la plus basse dans la hiérarchie)
+      //	- ZebraMXStopper:
+      //		Détruit le ProfileManager et l'EMDKManager
+      // 		A mettre dans la procédure appelée à la fermeture de la fenêtre mère du projet (la fenêtre la plus basse dans la hiérarchie)
+      // 
+      // Exécution de configurations MX
+      //	- ZebraMXExecuterLeProfil:
+      //		Execute le profil MX passé en paramètre sous la forme d'une chaine de caractères contenant la description au format XML.
+      // 		Le nom du profil à exécuter doit être spécifié en paramètres car la description XML peut contenir plusieurs profils.
+      // 		La méthode est asynchrone, il est nécessaire d'attendre l'appel à la procédure sCallbackSucces ou sCallbackError
+      // 		avant d'effectuer d'autres opérations.
+      //	- ZebraMXExecuterLeProfilAvecDonneesVariables:
+      //		Execute le profil MX passé en paramètre sous la forme d'une chaine de caractères contenant la description au format XML.
+      // 		Les champs variables spécifiés dans le tableau associatif passé en paramètres seront remplacés dans la description XML avant
+      // 		l'exécution du profil.
+      // 		Le nom du profil à exécuter doit être spécifié en paramètres car la description XML peut contenir plusieurs profils.
+      // 		La méthode est asynchrone, il est nécessaire d'attendre l'appel à la procédure sCallbackSucces ou sCallbackError
+      // 		avant d'effectuer d'autres opérations.
+      //
+      //	La procédure CB_Succes est exécutée en passant en paramètres le profil XML qui a été exécuté avec succès.
+      // 	La procédure CB_Erreur est exécutée en passant en paramètres le profil XML qui a été exécuté, le message d'erreur, le détail de l'erreur au format JSON.
+      
+     type : 720896
+   -
+     code : |1-
+      
+     type : 720898
+  procedures :
+   -
+     name : _Demarrer
+     procedure_id : 2040604031085456313
+     type_code : 15
+     code : |1+
+      // Android / Java imports
+      import android.app.Activity;
+      import com.zebra.windevmobilemxwrapper.*;
+      
+      public static void _Demarrer(final String fsCallbackSucces, final String fsCallbackError)
+      {
+      	mMxWindevMobileFacade.initialize(fsCallbackSucces, fsCallbackError);
+      }
+      
+      // Nous implémentons ici une interfaces permettant à la librairie java d'exécuter des procédures WL
+      // en utilisant l'inversion de contrôle
+      private static WindevMobileMXFacade.IAppelProcedureWL mAppelProcedureWL = new WindevMobileMXFacade.IAppelProcedureWL() {			
+      	@Override
+      	public void appelProcedureWLSS(String param1, String param2) {
+      		appelProcedureWL(param1, param2);	
+      	}
+      	
+      	@Override
+      	public void appelProcedureWLSSS(String param1, String param2, String param3) {
+      		appelProcedureWL(param1, param2, param3);
+      	}	
+      	
+      	@Override
+      	public void appelProcedureWLSSSS(String param1, String param2, String param3, String param4) {
+      		appelProcedureWL(param1, param2, param3, param4);
+      	}	
+      };
+      
+      // Nous implémentons ici une interface permettant à la librairie Java de récupérer le contexte de l'application
+      private static WindevMobileMXFacade.IActivityRetriever mActivityRetriever  = new WindevMobileMXFacade.IActivityRetriever() {
+      	@Override
+      	public Activity getActivity() {
+      		return getCurrentActivity();
+      	}
+      };
+      
+      // Façade vers les méthodes Java PrintConnectIntentsWrapper
+      private static WindevMobileMXFacade mMxWindevMobileFacade = new WindevMobileMXFacade(mAppelProcedureWL, mActivityRetriever);
+     language : Java
+     type : 458752
+   -
+     name : _Stopper
+     procedure_id : 2040604542186749073
+     type_code : 15
+     code : |1+
+      public static void _Stopper()
+      {
+      	// Nettoyage des membres et destruction de l'instance de l'EMDKManager
+      	mMxWindevMobileFacade.release();
+      }
+     language : Java
+     type : 458752
+   -
+     name : _Executer
+     procedure_id : 2040604636676051913
+     type_code : 15
+     code : |1+
+      import android.os.Handler;
+      
+      public static void _Executer(final String fsMxProfile, final String fsProfileName, final String fsCallbackSucces, final String fsCallbackErreur)
+      {			
+      	mMxWindevMobileFacade.execute(fsMxProfile, fsProfileName, fsCallbackSucces, fsCallbackErreur);
+      }
+     language : Java
+     type : 458752
+   -
+     name : ZebraMXDemarrer
+     procedure_id : 2040604795589943636
+     type_code : 15
+     code : |1+
+      // Résumé : Se connecte au service EMDKManager et demande un accès au ProfileManager
+      // Cette procédure est asynchrone.
+      // Si elle est exécutée juste après un redémarrage, le temps d’initialisation du service EMDK
+      // peut prendre entre 30 secondes et 1 minute suivant le terminal.
+      // Il est fortement conseillé d'empêcher toute action utilisateur tant que la procédure
+      // de succès ou d'erreur n'a pas été exécutée.
+      // A placer dans la procédure exécutée à la fin d'initialisation de la fenêtre mère du projet (la fenêtre la plus basse dans la hiérarchie)
+      // Syntaxe :
+      //ZebraMXDemarrer (<sCallbackSucces> est chaîne, <sCallbackErreur> est chaîne)
+      //
+      // Paramètres :
+      //	sCallbackSucces (chaîne UNICODE) : Indique le nom d'une procédure WL à exécuter en cas de succès. Prototype de la procédure : CB_Succes(sMessage est une chaine) où sMessage indique l'état du composant Mx
+      //	sCallbackErreur (chaîne UNICODE) : Indique le nom d'une procédure WL à exécuter en cas d'erreur. Prototype de la procédure : CB_Erreur(sMessage est une chaine, sErreur est une chaîne) où sMessage est le message d'erreur et sErreur est la description de l'erreur
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // ZebraMXDemarrer("FEN_Demo.CB_SuccesInitialisation", "FEN_Demo.CB_Erreur")
+      //
+      PROCEDURE ZebraMXDemarrer(sCallbackSucces est une chaine, sCallbackErreur est une chaine)
+      _Demarrer(sCallbackSucces, sCallbackErreur)
+      
+     type : 458752
+   -
+     name : ZebraMXStopper
+     procedure_id : 2040604834244659081
+     type_code : 15
+     code : |1+
+      // Résumé : Détruit le ProfileManager et l'EMDKManager
+      // A mettre dans la procédure appelée à la fermeture de la fenêtre mère du projet (la fenêtre la plus basse dans la hiérarchie)
+      // Syntaxe :
+      //ZebraMXStopper ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // ZebraMXStopper()
+      //
+      PROCEDURE ZebraMXStopper()
+      _Stopper()
+     type : 458752
+   -
+     name : ZebraMXExecuterLeProfil
+     internal_properties : CAAAAAgAAADExUFljYNzbq797fZHdDvZaRoA/LN+lPRitKjegTcx8TaiCyCW6boI+Dc0wEraT7ZaEDAXOnCuorhakgQVHYZwwR1GGGrShHtHvUVdI7E+HhqOw78+bPQv3gt5/rgfa+nh8gXRE3q/VoS4SmZoJBok6wPK1m66osSNFmR8Be7Q0q87XXAesp3W+CoqkEeiBHZo0c43PR+dfg2Ad9uRU8ksUnGcYhtCrj98JDKfUVZG+6xXCeaxt4bc6IGBMLzrYH2ZLQVndXa356SeoY3cBl7TY9IV7ea3DRTX6bBby7WcVwMxNcW2KbVE
+     procedure_id : 2040604868604470875
+     type_code : 15
+     code : |1+
+      // Résumé : Execute le profil MX passé en paramètre sous la forme d'une chaine de caractères contenant la description au format XML.
+      // Le nom du profil à exécuter doit être spécifié en paramètre car la description XML peut contenir plusieurs profils.
+      // La méthode est asynchrone, il est nécessaire d'attendre l'appel à la procédure sCallbackSucces ou sCallbackError
+      // avant d'effectuer d'autres opérations.
+      // 
+      // Syntaxe :
+      //ZebraMXExecuterLeProfil (<sProfileName> est chaîne, <sMxProfile> est chaîne, <sCallbackSucces> est chaîne, <sCallbackErreur> est chaîne)
+      //
+      // Paramètres :
+      //	sProfileName (chaîne UNICODE) : Contient le nom du profil MX à exécuter
+      //	sMxProfile (chaîne UNICODE) : Contient un ensemble de profils MX au format XML
+      //	sCallbackSucces (chaîne UNICODE) : Indique le nom d'une procédure WL à exécuter en cas de succès. Prototype de la procédure : CB_Succes(sProfilXML est une chaine) où sProfilXML est le profil qui vient d'être executé
+      //	sCallbackErreur (chaîne UNICODE) : Indique le nom d'une procédure WL à exécuter en cas d'erreur. Prototype de la procédure : CB_Erreur(sProfilMx est une chaine, sMessage est une chaine, sErreur est une chaîne) où sProfilMx est le profil concerné, sMessage est le message d'erreur et sErreur est la description de l'erreur
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      //	Le code suivant a pour effet de désinstaller la démo "DemoZebraMX"
+      //
+      // sXMLAExecuter est une chaine = [
+      //	<?xml version="1.0" encoding="UTF-8"?>
+      //	<characteristic type="Profile">
+      //	<parm name="ProfileName" value="AppMgrProfile-1"/>
+      //	<characteristic type="AppMgr" version="0.5">
+      //	<parm name="Action" value="Uninstall"/>
+      //	<parm name="Package" value="com.zebra.demozebramx"/>
+      //	</characteristic>
+      //	</characteristic>
+      //	]
+      //		
+      //	ZebraMXExecuterLeProfil("AppMgrProfile-1",sXMLAExecuter,"FEN_AppMgr.CB_Succes","FEN_AppMgr.CB_Erreur")
+      //
+      //
+      
+      PROCEDURE ZebraMXExecuterLeProfil(sProfileName est une chaine,  sMxProfile est une chaine,  sCallbackSucces est une chaine, sCallbackErreur est une chaine)
+      SI sProfileName.Vide = Vrai OU sProfileName = "" ALORS
+      	(sProfileName , sMxProfile) = _VerifieXML(sMxProfile,sCallbackErreur)
+      	SI sProfileName.Vide OU sProfileName = "" ALORS
+      		retour
+      	FIN
+      FIN
+      _Executer(sMxProfile,  sProfileName,  sCallbackSucces, sCallbackErreur)
+      
+      
+     type : 458752
+   -
+     name : ZebraMXExecuterLeProfilAvecDonneesVariables
+     internal_properties : CAAAAAgAAAA3rZPMkH/6FF6V8lqT/W9Hw+KZVOK1sywtrea06lt7X+ViteFrHRX8lXo6pxJs/Sr3ome4cEg7UOobLbckGCeNDOM/NtGu7obcl8Z6Wz+mfy4grTlAkUKMam5SNk6A/rLfDlLy5zI4w3N9lpZU7PgxKZzWT1WZIQfAfNfCZ37y/KSMYy+L1n+E/7y7wTPZwNojCAA3b1aYzRuTfU/MsxyFosO6f6ze9AF3Up/slQG8jyynOU8IILwWtALhFtoGAbLfODfocLgzhlxhBavQoI9Px4BWgOFK8rv9B93XXm1jnBivHAf5OWkXjnHVfY+DpsdkdQBsfWcOZi+Raojs
+     procedure_id : 2040977637409560104
+     type_code : 15
+     code : |1+
+      // Résumé : Execute le profil MX passé en paramètre sous la forme d'une chaine de caractères contenant la description au format XML.
+      // Les champs variables spécifiés dans le tableau associatif passé en paramètres seront remplacés dans la description XML avant
+      // l'exécution du profil.
+      // Le nom du profil à exécuter doit être spécifié en paramètre car la description XML peut contenir plusieurs profils.
+      // La méthode est asynchrone, il est nécessaire d'attendre l'appel à la procédure sCallbackSucces ou sCallbackError
+      // avant d'effectuer d'autres opérations.
+      // 
+      // Syntaxe :
+      //ZebraMXExecuterLeProfilAvecDonneesVariables (<sProfileName> est chaîne, <sMxProfile> est chaîne, <taDonnéesVariables> est tableau associatif, <sCallbackSucces> est chaîne, <sCallbackErreur> est chaîne)
+      //
+      // Paramètres :
+      //	sProfileName (chaîne UNICODE) : Contient le nom du profil MX à exécuter
+      //	sMxProfile (chaîne UNICODE) : Contient un ensemble de profils MX au format XML
+      //	taDonnéesVariables (tableau associatif) : Tableau associatif contenant des paires de clés/valeurs. Chaque paire contient le nom de l'élément à remplacer en clé, et son contenu dans la valeur. Le tableau est composé comme il suit monTableau["sMaClé"] = sMaValeur
+      //	sCallbackSucces (chaîne UNICODE) : Indique le nom d'une procédure WL à exécuter en cas de succès. Prototype de la procédure : CB_Succes(sProfilXML est une chaine) où sProfilXML est le profil qui vient d'être executé
+      //	sCallbackErreur (chaîne UNICODE) : Indique le nom d'une procédure WL à exécuter en cas d'erreur. Prototype de la procédure : CB_Erreur(sProfilMx est une chaine, sMessage est une chaine, sErreur est une chaîne) où sProfilMx est le profil concerné, sMessage est le message d'erreur et sErreur est la description de l'erreur
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      //	Le code suivant a pour effet de désinstaller la démo "DemoZebraMX"
+      //
+      // sXMLAExecuter est une chaine = [
+      //	<?xml version="1.0" encoding="UTF-8"?>
+      //	<characteristic type="Profile">
+      //	<parm name="ProfileName" value="AppMgrProfile-1"/>
+      //	<characteristic type="AppMgr" version="0.5">
+      //	<parm name="Action" value="%ACTION%"/>
+      //	<parm name="%CIBLE%" value="%CIBLEVALEUR%"/>
+      //	</characteristic>
+      //	</characteristic>
+      //	]
+      //
+      //  taMesDonnéesVariables est un tableau associatif de chaînes UNICODE
+      //  
+      //  taMesDonnéesVariables["%ACTION%"] = EAppMgrAction.DESINSTALLER
+      //  taMesDonnéesVariables["%CIBLE%"] = EAppMgrCible.PACKAGE
+      //  taMesDonnéesVariables["%CIBLEVALEUR%"] = "com.zebra.demozebramx"
+      // 
+      // 		
+      //	ZebraMXExecuterLeProfilAvecDonneesVariables("AppMgrProfile-1",sXMLAExecuter, taMesDonnéesVariables, "FEN_AppMgr.CB_Succes","FEN_AppMgr.CB_Erreur")
+      //
+      
+      
+      PROCEDURE ZebraMXExecuterLeProfilAvecDonneesVariables(sProfileName est une chaine,  sMxProfile est une chaine, taDonnéesVariables est un tableau associatif de chaines UNICODE, sCallbackSucces est une chaine, sCallbackErreur est une chaine)
+      SI sProfileName.Vide = Vrai OU sProfileName = "" ALORS
+      	(sProfileName, sMxProfile) = _VerifieXML(sMxProfile,sCallbackErreur)
+      	SI sProfileName.Vide OU sProfileName = "" ALORS
+      		RETOUR
+      	FIN
+      FIN
+      
+      sMxProfileModifié est une chaine = sMxProfile
+      
+      SI taDonnéesVariables..Occurrence > 0 ALORS
+      	sClé est une chaîne UNICODE
+      	sValeur est une chaîne UNICODE
+      	POUR TOUT ELEMENT sValeur,sClé DE taDonnéesVariables
+      		sMxProfileModifié = Remplace(sMxProfileModifié,sClé,sValeur)
+      	FIN
+      FIN
+      
+      _Executer(sMxProfileModifié,  sProfileName,  sCallbackSucces, sCallbackErreur)
+      
+      
+     type : 458752
+   -
+     name : _VerifieXML
+     internal_properties : CAAAAAgAAADU8ZA/d+GIM1K78Py3+ZSKzwOt0T+p3RZheYNdXWtwWgjZQqtXcNGg0sAsbbxmj4IF+E53DZMJfGSvMFSLMaL2aNtHeuNWU/YW0DE3iFqoWK9l7QlDFbVsj9trGljubHqNx3oFhE3x1jUbePdFyO7b3zAXUDxS+G4BbkSpYkD06EiwQ0eQATUt2/mcgIR2FIfF8gUudXgI/21c4vqdkjqQLnYWlxtZDAf4LEPXB4h+gDX15UfmYzZF00hskySuQPSALT6qcOOu9soFFb+SC1XLC4Fi7g0d84QIO17SXKmyXa3qKUMVwgY9IDq6ulNvJmLRtY0dlIL42X+4Yi6hwprr3g2rpuvw
+     procedure_id : 2230207295107676648
+     type_code : 15
+     code : |1+
+      // Résumé : Procédure vérifiant si on est en présence d'un export to MDM de StageNow
+      // Si c'est le cas, la procédure renverra un XML mis à jour contenant un profileName (obligatoire) et
+      // nettoyé des balises StageNow inutiles (<wap-provisionning>)
+      // Syntaxe :
+      //[ <Résultat> = ] _VerifieXML (<sMxProfile> est chaîne, <sCallbackErreur> est chaîne)
+      //
+      // Paramètres :
+      //	sMxProfile (chaîne UNICODE) : <indiquez ici le rôle de sMxProfile>
+      //	sCallbackErreur (chaîne UNICODE) : <indiquez ici le rôle de sCallbackErreur>
+      // Valeur de retour :
+      // 	multi-valeur : 
+      // 		chaine 1: 	nom du profil créé par la procédure
+      //		chaine 2:	contenu XML mis à jour
+      //
+      // Exemple :
+      // Procédure privée
+      //
+      procédure PRIVEE _VerifieXML(sMxProfile est une chaine, sCallbackErreur est une chaine)
+      // sProfileName est vide, on va vérifier si le profil contient bien l'élément ProfileName
+      // si oui on va récupérer le ProfileName de cet élément, si non, on va l'ajouter au profil XML
+      sNomDuDocument est une chaine = "CdeXML"
+      sNomDuProfil est une chaine
+      XMLDocument(sNomDuDocument,sMxProfile)
+      //XMLOuvre(sNomDuDocument)
+      SI ErreurDétectée = Vrai ALORS
+      	Erreur("Erreur lors de la création du document XML")
+      	SI sCallbackErreur.Vide = Faux ALORS
+      		ExécuteTraitement(sCallbackErreur, sMxProfile, "Erreur", "Erreur lors de la création du document XML")
+      	FIN
+      	XMLTermine(sNomDuDocument)
+      	RENVOYER ("","")
+      FIN
+      
+      // On vérifie si on a pas déjà un ProfileName dans le fichier XML (on prend le premier venu)
+      // Si oui, on peut arrêter le processus et retourner le nom de profil trouvé ainsi que le profil
+      XMLRecherche(sNomDuDocument, "characteristic", XMLBalise)
+      TANTQUE XMLTrouve(sNomDuDocument)
+      	donnée est une chaîne = XMLDonnée(sNomDuDocument,"type",XMLIgnoreLaCasse)
+      	SI donnée = "Profile" ALORS
+      		SI XMLFilsExiste(sNomDuDocument, XMLBalise) ALORS
+      			XMLFils(sNomDuDocument)
+      			donnée = XMLDonnée(sNomDuDocument,"name",XMLIgnoreLaCasse)
+      			SI donnée = "ProfileName" ALORS
+      				sNomDuProfil = XMLDonnée(sNomDuDocument,"value",XMLIgnoreLaCasse)
+      				XMLTermine(sNomDuDocument)
+      				RENVOYER (sNomDuProfil,sMxProfile)
+      			FIN
+      		FIN
+      	FIN
+      	XMLRecherche(sNomDuDocument, "characteristic", XMLBalise)
+      FIN
+      // On va créer un nom de document et insérer les balises qui vont bien dans le document
+      sNomDuProfil = "Profil-"+ HASARD(20)
+      
+      // On reouvre le document de zéro
+      // On retourne à la racine du document
+      // On vérifie si on est en présence d'un XML StageNow
+      XMLRacine(sNomDuDocument)
+      sNomDeLaBalise est une chaine = XMLNomElément(sNomDuDocument)
+      SI ChaîneCompare(sNomDeLaBalise, "wap-provisioningdoc",ccSansCasse) = 0 ALORS
+      	// On doit supprimer la balise wap-provisioningdoc sans toucher au reste des balises
+      	// Pour cela nous allons supprimer les balises sur le XML au format "Texte"
+      	// en enlevant la première et la dernière ligne et en les remplaçant par le ProfileName et la balise fermante characteristic
+      	nNombreDeLignes est un entier
+      	sChaineExtrait est une chaine = ExtraitChaine(sMxProfile, rangPremier,RC)
+      	TANTQUE sChaineExtrait <> EOT
+      		nNombreDeLignes += 1
+      		sChaineExtrait = ExtraitChaine(sMxProfile, rangSuivant,RC)
+      	FIN
+      
+      	i			est un entier
+      	sResultat	est une chaîne
+      	sSouschaine	est une chaîne	= ExtraitChaîne(sMxProfile,rangPremier,RC)
+      	TANTQUE sSouschaine <> EOT
+      		i += 1
+      		// on discrimine le rang qu'on ne veut pas conserver
+      		SI i <> 1 ET i<> nNombreDeLignes ALORS
+      			sResultat += sSouschaine + RC
+      		SINON
+      			SI i = 1 ALORS
+      				sResultat += "<?xml version=""1.0"" encoding=""UTF-8""?>" + RC + "<characteristic type=""Profile"">"+RC+"<parm name=""ProfileName"" value=""" + sNomDuProfil + """/>" + RC
+      			SINON
+      				sResultat += "</characteristic>" + RC
+      			FIN
+      		FIN
+      		sSouschaine = ExtraitChaîne(sMxProfile, rangSuivant, RC)
+      	FIN
+      	sMxProfile = SansCaractèreDroite(sResultat,RC)
+      	// Notre nouveau profil ne contient plus la balise StageNow
+      	XMLTermine(sNomDuDocument)
+      	RENVOYER(sNomDuProfil, sMxProfile)
+      SINON
+      	// On est dans le cas où ça n'est pas un document StageNow, mais l'utilisateur a oublié de mettre la balise ProfileName
+      	// On renvoie une erreur
+      	SI sCallbackErreur.Vide = Faux ALORS
+      		ExécuteTraitement(sCallbackErreur, sMxProfile, "Erreur", "Le nom du profil n'a pas été précisé dans le XML fourni.")
+      	FIN
+      	XMLTermine(sNomDuDocument)
+      	RENVOYER("","")
+      FIN
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_SansNom1
+resources :
+ string_res :
+  identifier : 0x1c51a8a700851c38
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

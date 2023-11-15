@@ -1,0 +1,360 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FEN_GestionnaireEcran
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : Demo DisplayMgr
+ subtype : 0
+window :
+ name : FEN_GestionnaireEcran
+ identifier : 0x2fc8bbe726f8edf7
+ internal_properties : CAAAAAgAAAAa2Q+iRMWekruAvjX2YdFiSIKBxnU0ZfB2Z8kEiM3fE+QnEI1wKXX4lT2je7rBm/Hv7q56gPXY16+WnUr1BlAwrnU2ZgOW3izyLgN5yklX030p6nuk/UZNR1ywv5SIsut/6pnC7nF08A/BmeozxBAJQQDmhnxuqZV6pLu/89PeZtTvMNT8cBN0g6g6luy8R4PA1E7zVoic4Kb002NeNUUGSwEW0DG+8Yg8XM9BTTa9juEbRaa+k72S26VR2wKKyuquTGJNevbBUoCGFwRNoyBRv3yV3kA06Zuuqp7y3HggswCZgm/NxiNCrdP1UuCgFtCoZ3OzED1yNAu8kPTP/cR1jv0VT+6tuzNbO5DC3KVRsqIiM8uApLm85xoHaMpDOoy6HyTWJlEmeIF/Hafe5JHW2g+N3WzyxYWTTqxr/NHkITFKGHtcsc7vnCmEECFsl3MJmlZmepLb+emTBgOSIhR1Xrrr8uK59C7vpGNt3GXJMJrHhDGgDZ0iz/e9IsAwrSzc8XhLujVG27bQY6G6EO6//SaW7UzrAtLCC4KZaGX/M/v+V6qlvc8HCIbjRbPJdwdkwz0RllJimghzY/lgsjcsVDvuN70L72M+UJ9nWFpT/913fERwd3jh1v7+YdBvJjWbc2W6ExOXxzZX/vk70B3uyUKMfG72ozur/z+A+NGFyZO+9wDJcs5SbZ+0gafj1rLDwcLt9FSujzbnagfLxZSwlsYP5K8qHcZN1afbUHNliv3Ma1OpwQkgYm+O4/H+CrleF0s77g7gKtzKTWZKpH7A5tChKQBFPFPcffapHjkcEok9N1AwNsM1gpFBcCLTyRDGhPyn9dPqFUWDQA41r4AL3I7FcDpRdR4ensispDaduG7WOUyUZfOU80f23XTC+4T5Oe6c4LcqjWx2VYUw87G7nhDLZ+ciutNhz8fNHy9sZz+LwiGrmddO4noNStl82tto7dzOB2iLBn9BhnJuVykitnAjk3QXB23Rn6y74iXHd07gh0moCPJtZl6/EuJ+AExSDApD+hJlZlEDUumzfepJN93kxZB8KvsejhcWsuZKwHL8W2TOSMKm9df87Qb2MFojRGFZIFIU9S5sGUzIkWNxS8Rs9KLkDFBTECOaT/fgQ+zTIg/lqLYb08TIVCW8DM/lD8MrDAWCrFamjsUB/XplVrkKH8JfJy+LtVgEvQgpcboNCAF5U+EzQSiiuXHALJp4DLYuInmmWDUxrSAAjKmKoejA9TbVGchKaEAsts40VZIvct6F2nxosffLIOWBqA7z/vh5cRJi8AXR8RBOE0OB/HDKUEq8XJelRiOAz1Y4sp1LteZ6Rtg5DpiCbZKxahyo+DVBtu46F8ME9S0D8uzfoqPCniyS+8w/rWJFD6E+KQg68PI2TVQECxA7Ve+YyMc5/lPxSlFv0qvemwlCRk8cU/CIJPw+WWKTOT+sO0PvVl0DEI2pmJGe9l6D/jV+Rt2aJlzJhrTOtTizbZ+3XFnFowdWTMEL7qzDSt7RebFf2I9k2hI8WOTddLwlSOurv5OnufhpFNTd5JjFCOyGqy8+bHUghhImk2/ZgCgDUQth
+ properties :
+  width : 320
+  height : 407
+  heightMin : 480
+ controls :
+  -
+    name : SAI_Stat
+    identifier : 0x2fc8bbe726f9edf7
+    internal_properties : CAAAAAgAAABNquhX3aX+9tmLPkh751iPmvNFd+YTngBbmKuH4sO38PdAWZ9tYIv/YnI0IAyaDhf5hHLKItCthhrndRIgRwdBigaWVybQ9KV6UI31KSseNqgPOZAq7qCXzvvg1ANHsz2RIvNzzUbhYVc5qyvbCOzPEwsP8scHikrU4x/t3qX6hOOTQwbkdhen1bFvWCqG21KutyyBrfJPbZywQctMigtzSN2IhhloeAWhhm41QPAbEJnTatNM1+oEO/jesY55NESYt3i7m/nbOvWWyJiQML1FiJZd/yyjNJRR/sJpSn/seLDWtNaGuVbiScDrNK2aLsn0MtSI2fS8YtkrFEc6pO7ILlQxG/RqnMZXpbuOevBu3RUAiWpCJywMD/TT/ilHJgdMBX330YJIHgqCYx5uLZjXB4oDL1XmdjX3wS9idxS6Z0/KDYhD+rfjGWCftNeV21Igqrfb32sa04aglCTSnt38qHxKZW+4D7a7JDZQWO/sFjv9TgIo2SgU2MZ0c9n7lcsk5AzCSg59hqc2YQWEbeXDd+25AGEyPW/wdEhG5p0Ry/1vQXrClVq0HzJbUvucjBbd+9+Cx0JaGFrJyrnPgCP5uNONumyJw7yl/iJcJOKYE9vayQic2ORZWZVmbp5gVYrWeX7R8hjBk3+mkodU5nPN03QI8mfrhugghVbX6YtNfopjsqlTdQlz9pGC8LGm0zsnmbg7C+fMbDX2VPrlc2FeS5xpSQlKnS3zYOgqSL9hNzRZJ7uhe464RNyZVoXBc7x2qBLrMQTDV4CYmZAcJy0CIEWT3hEVet/MNPfjNNwWSlMNlzfT5VsCNdT6nuMSn/vDhVETNwzOpwDwY0IZlahuv5TmZj2MEF2fxwqmTIihvPYVNN/BJ1Ge7YgrMm+SfG9jcdg2OjHwgNcTdQrM+1BuxeETq/q06uXsoav5ZXvKRFXC8sVPlXkx2dRHnrzXBjXy3zk28pM3+0fbq270S3nXLRaGJ/3aff9+9Xy8sk/lZ8sT8vJcbBhqiWmVjrJlKTw9oEG0dv1La9Jo5Q51jDiAWLm4QH61bqiKOENzQpKCGp9C5yxbq1s6ZgP44457Q3jLpQCtRIWQcFVHHy3GtCfVzRYJqgAUUheUx548j9RUOvvCJVKb64dMu78Islk/b8WgP79clygD2ktBy+AHCJrxwpHQMw1KQx2VXveo5h+LpUxja1IaUIRXwz23hkx+Ub1uHfLNF8ud6Ek+6GcyIO7V8+iuEhNRgI2GcObRHy2d8ER6TxDWQCC9fbXdmeoCo8dNVK5ZZj+xycVeQYtMH9Op6bgL5Ng02uXinby2Bdvh99KR2Tb373OECf4mt9TxS67vrLB//ynhqcXCXEwolQosbRAHN4gfS/0In6evH8sUnFOxZKGhfRzu7Lir3ziXAt1e00aXyMrAtFhTirGZVRoGcCpaM7c6ybF7np07UwxWllF8gsUjfkmpHAaWwmzA4lpqN+lEUKQXdodfSgh8FIwZlYNkEAQfg/T6KD73+AqDd2hXl2uCjf8s7YVJlYCJDlZ/0sWOkcv1Ng8sZx5V0JrLiKuSX/xzCo5g+OlQTDronJJVyYt+6yDvls4WNHqcLRSIN1Vb0uGtn9U/4btRWxbGxTRyWnWILPMzTlvimwLkRVJqxzw7josMApXfWtWfTPi/2lHdhE6U4L3z7NQG4fW++H3OVAQF1HNin/SeR1ZneZDj65WQPUIeSa9dRKmlGoU2IBw3p8r7j01AoKsM0ArCiJYXQQm3FQ8Yyxq6gnF3RU0M0zKUzmeLW0VRyr4i3FKRHuN9/BGpJBhIUkVrp4mzDDlPwTJJBGB4f0aDZb+5wScogN7yc2RdWhGyS56msfPnIv4JpgpTtffzPf/vOFsNX0uqjz4aHRJijlvVg+Nnhp3ohc0Fjm+5IJMbI6vnSF/gJzAn
+    properties :
+     x : 8
+     y : 351
+     width : 304
+     height : 48
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : SEL_ScreenTimeoutInterval
+    identifier : 0x2fc8bbe726faedf7
+    internal_properties : CAAAAAgAAACyP5tI2mvSLeJ3BOwOJ61GJDHxMwm8sd49FZnDKg4G3M3huzpXaFph2bsokj+4M2TljeW1xFipXOSJnWkLod3CLeSJt0pGqvAqEarsU/OsFUKnAyGV1VN0uBfoOoCIcaRFtV4q0FP8n37EbWXO/mC4Fhh8bZrV+WRTnfC36CQYyoXYDIuNMbF3JC02VFHw3ommujyL04OZo+b/o/ZgSYySCj+rr3DGvToPhzUUNn1J4YHCeCC9LUChAfRhSaUg2Gw0qFP3fo0zfwIgPsc6vico2t+S+8pKZ3ZcUCqQSaXLQl5uTg8QFfHWEcNxX5kulZy+oNbGhbFMIe6UczqZVpBAwFLFSxi8riVPg5cksOpeGL5pnwBHp+cTmJ3+Fk4/e2TkndzvH0hALD3xl7pRJZ/vPg1uW7KcOZy01m0e91ymOJA5sKl5uyTU3zgDM4Evn5y4x2SXYJ4BEmrTE5qquHOZkdWC5/X8LOt2UHV9gELsdchFtieZFQaZvT0RYLZGo+Kfy0/qJ0giA4xS0erWDm7QpefbRkqH/KVjyN+orRJSwIq6NBYQtywiFrb5APGG1bWMMWA+RFaYlaiKgSGur99ca27wDZoL3tWfXYFolPrNEIZW8luf1P0ZFPHPK7iuH8F8coQwQF7yN9fupzVO0i+Wb1AG8gTdpp4ftYfWRny7q1k5wRU+YfqAfAXoBbqdYNbxkCoe2mFUxZPMxCZrCC/8OLLrvGF/dqmWwskC3YFcqY7piyj+YHnfnA20SJW0WyI+6fElBsFyC2sW4Ph4moa/G78J0SPhVZFiPCqESBSfYSA/9YGXeBWptdEsCwlukh1KYWdOvB4jxqpX9/p8JO6Kyb7S+AiJ3Nv6T5UaiYs3m7tgqZbifRwM/YCEzVyEY6SR0TVjCStlbvqrbmiR/jJvOyNau0HnPXKvJck1Tj4j5M3Mt6H74hTXNCRGdKRh3JQPU5xpYbb57rpLmqEHPtNkBSlM3fK3+gpZaJZnU1monCxpchoQMSLMKhax3jcBlfBVFVpqemA/l/nmDj/56eJJnAjHT7fhzjVNc+br9TRQ6UoKZKhe0BPvf0mF+0uBdpuWDZ9j0LyxkP7zBu7pVDLCkgsvjP5YLvPUciv1YNC3mKgGMXsFyg7cx+tqZDgfkor4Ou/yjoPi0+nfUUCM1mzbPli/jAM8QISPu9WsQbY7zI28qm6oyttWU5Mfucjz2EGLmLaF6pN+xYe3e19j6KvhMgSrloda+MMbbEIKzoadKcAl+Aqg+5oQD6E5aWm/mhtZd9a7t2+vKTTeOqRjM55FzOaBIFGGXuG0wvJpjkJOMO7Csx9FduHy4UizNwMuVKDCb34txZ6OhEycFr+VvbqjAD9ni77e3q/9MNQmvce/SH8fAd0ajjfSzNE4ZzXnVgEupTxXG/pxMvOxg96AsVqPuiMSzypSiVhU9N7BPLSx0yQ2OzWxJCGJb1X5qRQopdYzIUCp4J6EGJMsEH7/fcyDzM9ipQhvAxNS+pDabCkNEPh6Bp9ohiX0pQr+O5yc4ITGir9I
+    properties :
+     x : 8
+     y : 8
+     width : 304
+     height : 296
+    options :
+     -
+       internal_properties : CAAAAAgAAAA0NJ4J+KZw2z9NBM/Ki4s53TU8OkrhwX3s398eQYp1ATTneeNXedt3eDA6XFIHhJLGTTpaYN0v3HeNQkRLEMNhu8oakSrTifUZyJ2QRttfIHmGiLB4H5rEgw72x8pIcz7B0mRYTaXmtINmWH7l/Bj3S81PThqRfJB9wRMLlCIJYT0gQ74zqE8KkclrpZCO3svKSjKt7WUq4WHpCuZIt4eJ7MM3+HWhHQguKEXLLw==
+     -
+       internal_properties : CAAAAAgAAAAP0T94QLWIlPxOh51m6G/rHi2d2+StItlEA2qfAU6or5/FfcU2JxbBsZ5CA/eyULNUn796LScDLn+hdqWpMQg1RhAoPXNMtFgEvmHr0moRzcWGSCIGEr9lUI+v6CaWYCmSMkr8fNvRf44l/j5GuZdq/EsDNHe2630cgKJNYK+zQk99s1LSqZvmrWMDuZZw/YQaIbhbWCau+RgbhEk/vOuLS7OhCe9Rkg==
+     -
+       internal_properties : CAAAAAgAAADKKgedHICzRdV86iIzQM71mBQnEPYp+kPbv2suRaWLhGuB1Vi7f5PIthsjlsdkBEsggvxDqDHAMSyqdgSIdwHx6G7+B9VcMGMP69SCgpjgttnxbCBcJWBuqg0w26oLUWwY2jAXlNRXlL1AX7BNZm0/QHPwGgc4wNwsBzWMk9gR9tBXnKjY8DRwQJImZqgPSkQy4ia47d7KOlgy/ejF8geSdDJU3DSt
+     -
+       internal_properties : CAAAAAgAAADuzHnqD5L3M3yfPRQgNIJ7SW4axsLttffJEl9tbFMAsSZbjZcS0/X8hhBxg+LB3qZER+rrPudjpB4OMCnVDlUHmKD+9FjwtRXsJ1Z26BRI6s+1Ijb3CvNvCcjwKZlw1FW1u37fde1ugfQDB9GwJDBYUW9pcLvP2/T6IEddiJt6ZsHXRMswqcgiBUIoXAW9l5KXjUyfJb/qektxtPV7WA==
+     -
+       internal_properties : CAAAAAgAAAD1ajSe6Ou6FxautpfgNgYsWy7gVatSMXn756BcjAFyDYmO4i4OnSVG74YkX5pmHWOQ4gg6ibhtTdJuRBSMiXBVxohcjgE0nh04sw6v59QQ6/rb8Ulo8AVFv6qLvyjCDKkWTqz0rNv4Z1JcfXLBXE3Hz/dcf/Arrm91DClrcwnDOIRDmWUKZd7XDnAZV0mQ/bQg2SjmsFTjNLj3lSFLPUoxc2YSVS1iRbadaeny
+     -
+       internal_properties : CAAAAAgAAABXlg7NAAsXMYH5vadZkzcIjXq96VaNrZ7wGwphQYyK/jFNgYK0xAK7x0U/HLFBXUeyDREBnjFKLkpma3xccexx5c0hkSy+gGI726ACft+ALZnA9tk75naJoI2Phe/4+94X/IaSUZOfW/Fy9Oe251oyRsOIrn09uiSxfYOnue8yHsdsWLXEbIIBQzYEQ43z0p3TEnWJup0uN9/eVg==
+     -
+       internal_properties : CAAAAAgAAAA10PV4EUWEhislMcR9OsuLHkxlBffpn96FGqAgucgEIiVpbPTR/GX0493TT1CiKlfbjUlgsVsMyZewu7goIXr0MyJueWDaQ+d78h7FJGbD0X/hvOGe75kYhwlo/1C/Xo7pqxCm9rTCXBqEj0E/dOvQvmjc3Pj8b++4UfR35I4x3smRNMtZt7tNG0N8iqSKYVsOYTcPH7XwP8vdTEet
+     -
+       internal_properties : CAAAAAgAAACmYWRpAopN74RMyGce2Soog9nYmERqJN8qrSNfNlvzn6ISRwkemQbZdAAK9smVYTyALnDV1oCJehwrDiedlNl97Oc1pjHHSFA4feCtXCZgbtr0lwZHwjazcqRL4L3mIdeoytOb709nNyEb1v44tz6hUUt7tf2T+HIP+Gu89Zk897igN8hagkCkksjxHTfngnovAlBmtt4n9LzOvdY8
+    type : 6
+    controls : []
+    code_elements :
+     type_code : 6
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+  -
+    name : BTN_Executer
+    identifier : 0x2fc8bbe72703edf7
+    internal_properties : CAAAAAgAAAAW0vBWsGvraSD7S4+V5qf/yIbUNAYIfayRxwcIp7HPOmeEpsLAFOvL7MewRifuhq5hcNC1sD/JS6wa4zVLhtUf9OQZaeqhOC+kjqhCR33T71vlKAmxQZEYLOuM1NJFggeWP2qQC949Rcm3ErkQpooGCqK9kEeSvTcrkGYu2F8hxr1cnBKn+tMQ6CnIyMZ5ZrxerfbhkQTFXntLtsRlB8jzMqtzzgKwBWNLKXp9ei2VOxP2LZME9fz4Uwmcrwe10lekmN8OOnB5Icjh1w00yM2ZNoQrPnnIedYVSBgTj/f1HFGP0d37hjEz3BgILZINwn/ysI6Ht+pbRSKQPhSE+IM8XGV7pYeISV4ND4ucFkH5QVB+NVNc4ES6Kkw6IaqYzb1OHNlHNEIrr8ZIsc87HxGypjueyHRm4AEgg0u7B2i5iSZSFJdSCd4X0YGvgzGdAF8w2HEIvGcGEJ1wynDNXMOLa6Xn90Lk+KQ6sSe0hC+ev2WnIxR6U1VXtD4puhdELz/zR7Ys+PlCOVTCe7DQlYglYu+yHPtxXaBmXl+RgVx06HKAdzZpkjwwXyo68zrufSCGg+/XjUROwBLyPzW2DQhCpFK8k6JcbB4Uk4+IbxSQhuPV0C9qVivbH3BmDQHQiXVsIhDC3wT4/OYfPKnnsGGFfzN2tmeXZrIKx4ipiIafTA5DZBpOMp+TnNrr0z6l1O1PGvJKfIQTM0DD9RFaT2gFaK3Fl6CrTjmSh/6iObf3teH46L53MRYbtJl+J5vyJz3lEzJyoZWAv19wdocupKgSFlCWT2xi0VBckFVtMncgICiTQT6UUAOToewc2ZmZoA4EuQ+neHvCto2alXLFl9ZEQixYA91jYJq046Ac+3wqjmNrcbV5e+34HIqp9yhr+w2HSSOYTTkS0lOt/g2qkVv0/iXpS5NWvlppxVKyEEIyEedeBpqF5J8GVgutLS/cLg960lgGM8jjSLpJOstgabobeXjUbNHp+Lb4sOCuuo7atmtSEwd0L8n8DgSIT05fR+MVenReG0bgXcIlFrQQMkZYqcwSpTCDVwfxgRnJRSHPzeE3NxMC+c5TFkrk5m4/zFJFMoOluTqnu9Q0Bs7nuj2S9fqxEdoYrxDtvVPHkopM9xt7VsV18etJxG+TGSIAKsuOw3oTqaGStg/zlybH1RxwslwV0In8qrAS3HKpDZ0fBe/6pUOdFnZ8eW9Y+QybRraN5BHphwszFVhnfBJx0W0QRRtkZIkXBYitf7553LriGdolD7Yd7l7Wg4kPeD1fKN22X/PlAghd74HPDWJb+xBnTA+/XgOjXWkQBJTBls4oYKJzUZ6Pgs+77JsB7cqfEZfoU3GX+Q0IDytLIoi4ELPfZ/QfrAPLDYXWleDL7N69DtTceByFscFJpiSBAqIRBV7sNoPTelK/70qtA/ZkjiT9YNEby9RtUrBqKc7F
+    properties :
+     x : 90
+     y : 312
+     width : 140
+     height : 31
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        internal_properties : CAAAAAgAAAABKX+aVRG0GW8QAZae54n7JSBzM4VaEbT3CmLLwlwlSCYk0zSuH0366YN5cjDh+XTyuLPmio4SnZPTVp4TMlRQps3W+q8FZl/OxSXi5+hBJwcownfQLGtRYerI5xFgWIICnLzcVhvMVnditWvwBcpwtzD9E454kbXoHfnowAZkSyiMAY7EBCkvSXEBtboeWjWePYb97ZHBjEeZBtlXfOGe4op286nF1Ea5eM5zM/dOUR2RHO7uM7Mop6D5FnRCFZj9IikkkM8PJmtXcgMXX6CuDnsbnbWZED+utT1uXOEpjUM9IJeECfwTWkVRIZE0
+        code : |1-
+         // Dans cet exemple, nous allons réaliser une fenêtre qui nous permettra de contrôler dynamiquement
+         // par programmation la durée avant la mise en veille de l'écran.
+         
+         // Pour cela, nous allons directement récupérer un fichier XML exporté depuis l'outil StageNow
+         // et exécuter cette chaine XML depuis Windev Mobile
+         
+         // Utilitaire StageNow
+         // https://www.zebra.com/fr/fr/products/software/mobile-computers/mobile-app-utilities/stagenow.html
+         
+         // Documentation de StageNow
+         // https://techdocs.zebra.com/stagenow/4-2/about/
+         
+         // Documentation du DisplayMgr
+         // https://techdocs.zebra.com/stagenow/4-2/csp/display/
+         
+         // Exporter un profil StageNow vers un MDM (création d'un fichier XML contenant le profil StageNow)
+         // https://techdocs.zebra.com/stagenow/4-2/stagingprofiles/#exportingstagingprofiles
+         
+         // Voici la chaine XML résultant de la création de notre profil StageNow après export vers un MDM
+         // pour un délai avant mise en veille de l'écran de 10 min = 600 sec
+         
+         // <wap-provisioningdoc>
+         //   <characteristic version="4.3" type="DisplayMgr">
+         //     <parm name="TimeoutInterval" value="600" />
+         //   </characteristic>
+         // </wap-provisioningdoc>
+         
+         // Afin de rendre ce profil dynamique, nous allons remplacer la valeur "600" par "%TIMEOUT%"
+         
+         // La chaine devient:
+         // <wap-provisioningdoc>
+         //   <characteristic version="4.3" type="DisplayMgr">
+         //     <parm name="TimeoutInterval" value="%TIMEOUT%" />
+         //   </characteristic>
+         // </wap-provisioningdoc>
+        type : 14
+      -
+        internal_properties : CAAAAAgAAACP1zVAqZ+dmobYDQNPpMCM1DnzlZg8GTHGtJv9mL3BJqkHlNwb51iY5hwTrA5oHoRZnvu+w84fuS4x90H4dOh7Ut7Jhmgr/Wyc3s6xx6DjpWCpmqXAzvrrAI6VReQ3cMKrtfvdUWACCUbeJwwECcD6pp3EjawfXhdXFWhvsbIjtgNDgl7alxa3rzP9Ha8IA17OXLygxFDPER/+hxFQ24dzSPR6oehcNs/npdhwlA==
+        code : |1+
+         gsStatusTexte = "Exécution du profil en cours" + RC
+         SAI_Stat = gsStatusTexte
+         
+         // On copie colle le fichier XML généré par StageNow
+         sChaineXMLaExecuter est une chaine = [
+         	<wap-provisioningdoc>
+         		<characteristic version="4.3" type="DisplayMgr">
+         			<parm name="TimeoutInterval" value="%TIMEOUT%" />
+         		</characteristic>
+         	</wap-provisioningdoc>
+         ]
+         
+         SI SEL_ScreenTimeoutInterval = 1 ALORS
+         	// On a sélectionné "ne rien changer"
+         	// Alors on ne fait rien ;)
+         	sChaineXMLaExecuter = Remplace(sChaineXMLaExecuter,"%TIMEOUT%", "Do not change")
+         	CB_Succes(sChaineXMLaExecuter)
+         	RETOUR
+         SINON
+         	// Suivant l'option sélectionnée par l'utilisateur, nous allons attribuer
+         	// la durée avant mise en veille de l'écran du terminal
+         	nDuréeAvantMiseEnVeille est un entier
+         	
+         	SELON SEL_ScreenTimeoutInterval
+         		// 15 sec
+         		CAS 2
+         			nDuréeAvantMiseEnVeille = 15
+         		// 30 sec
+         		CAS 3
+         			nDuréeAvantMiseEnVeille = 30
+         		// 1 min
+         		CAS 4
+         			nDuréeAvantMiseEnVeille = 60
+         		// 2 min
+         		CAS 5
+         			nDuréeAvantMiseEnVeille = 120
+         		// 5 min
+         		CAS 6
+         			nDuréeAvantMiseEnVeille = 300
+         		// 10 min
+         		CAS 7
+         			nDuréeAvantMiseEnVeille = 600
+         		// 30 min
+         		CAS 8
+         			nDuréeAvantMiseEnVeille = 1800
+         	FIN
+         	
+         	sChaineXMLaExecuter = Remplace(sChaineXMLaExecuter,"%TIMEOUT%", nDuréeAvantMiseEnVeille)
+         	ZebraMXExecuterLeProfil("",sChaineXMLaExecuter,"FEN_GestionnaireEcran.CB_Succes","FEN_GestionnaireEcran.CB_Erreur")
+         
+         FIN
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+ actionbar :
+  name : ACTB_ActionBar
+  identifier : 0x2fc8bbe72704edf7
+  internal_properties : CAAAAAgAAABI30o9XiGvEaE2CsjFOjMv+R3hyzQjS8vlz8GA3Mu2Tlh9KXcozl4ebYcmLu1KA9cJtD0vXPeWYgtCBi28l4DK6dtD/XVkNufYkZkRCHMH7xtS57Dj1jQS+mc+LiYMV2Z57PHpzyTwAGlrdvgq5QVG9253gxun3LfUOX5DZqIkoNl1+8Gsc6OcswtMEOKdM7l4p+vxWfAOsUikpMfFwqEL+Oawm43m13mPdvV2UmdtTDWtnKMUJrTLsONxF242o8bhsAXuC0M36Y3ifupEw3LNe8ZFP+SQJR0QNiZqG+yYsSeUoMIpIeN/ZFEhKFjuTRMuuuqEYVf2O5wEniZsSvCBCPJ15pXlD2vv2ofAgde1BvhIyVRMDjPntcnH2VgokJ5V31+EINunBkOQPFomuOvWb6jqmsG1qgYSXbMTqJlDkLXV+qeZFFIBXF1XWPZPcwwiZ5E36BqYJpwdvf8lX9waJuwGwdicgKc0Q5v7pVpoGtefTniPwaxrjSO66NKCnE21FpFPY4n0WkHu0gS9TykW1psqn3JHjKOOabJgqPjTd0SUVARsKRDtZUw5qM+Xm+UktABX4kTzeey0AQ/M/Gek
+  controls : []
+  code_elements :
+   type_code : 125
+   p_codes :
+    -
+      type : 229
+      enabled : false
+    -
+      type : 239
+      enabled : false
+    -
+      type : 240
+      enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x29f8144500a4e5ba
+  internal_properties : CAAAAAgAAADg8L/cWiybfCpfvzJmspOK59XaUGvolBtGE2GERVUZ1v7gU/mPEUwS+M/PZ6UkZx+53cAnr4lLHCFs/D5ikc0A+Ce0G9Gq58BTO6Kt/TPs3kLkH5F5NXeT9XojMLowWxt7OyfvfsyKL/RILSC6zC6FakoTUwD8uul4h0O2SWApcp7ZTeXbKKhsHOVVlRZwEC56fQzt31FH5qOzl9Rjdaw3ExdGZg/p8t3LJFWvry6u4gbg5EJApWsb9XTWtY/FHp3slplkjhufn60HXh4h0CHqEg0WdHiUIxir+q35G/mtHwnTy5zeNJ0NHTZPMVkKzEKQpGzCy4AcxACQdPGjkeWOY7tms4KD7g2c9cVF5F1XMpmSY47wofcpF73begvdOayHCpYOA7z/fTPileqtP0Ur4cylvEW7dB0cpK03ONyAWtdpuuZCIX8N7FFvIkr+5vyCJD0pO91rCo9Hb6hHBb1TQfgKlns7j48S8u2TgZppgKu+0uAOq2ovAFs8pw==
+  options : []
+ languages :
+  - fr-FR
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAABKff4sxysR+9kg8GIJ708iDvb5GJxqytSUKL54fomJ9xlu42EWUFv/+en+BSQDmdB2krqVslwL/1eyQDVw8sffQk7lF3aDfZNzV/+zROsnKAy1jaSejRR5UgML
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      PROCEDURE MaFenêtre()
+      gsStatusTexte est une chaîne = ""
+   -
+     code : |1-
+      
+     type : 34
+   -
+     code : |1+
+      
+      
+     type : 234
+   -
+     code : |1+
+      
+      
+     type : 165
+   -
+     code : |1+
+      
+      
+     type : 177
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+  procedures :
+   -
+     name : CB_Succes
+     procedure_id : 2290287011540364791
+     type_code : 14
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //CB_Succes (<sProfilXML> est chaîne)
+      //
+      // Paramètres :
+      //	sProfilXML (chaîne UNICODE) : <indiquez ici le rôle de sProfilXML>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE CB_Succes(sProfilXML est une chaine)
+      AjouteLigneDansStatus("-------------------------------------------")
+      AjouteLigneDansStatus("Profil executé avec succès:")
+      AjouteLigneDansStatus("-------------------------------------------")
+      AjouteLigneDansStatus(sProfilXML)
+     type : 458752
+   -
+     name : AjouteLigneDansStatus
+     procedure_id : 2290287011540430327
+     type_code : 14
+     code : |1+
+      // Résumé : Ajoute une ligne de texte dans le champ texte SAI_Stat
+      // Syntaxe :
+      //AjouteLigneDansStatus (<sLigneAAjouter> est chaîne)
+      //
+      // Paramètres :
+      //	sLigneAAjouter (chaîne UNICODE) : Texte à ajouter au status de l'application
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // AjouteLigneDansStatus("Tout va très bien, madame la marquise.")
+      //
+      PROCEDURE AjouteLigneDansStatus(sLigneAAjouter est une chaîne)
+      ExécuteThreadPrincipal(AjouteLigneDansStatusT,sLigneAAjouter)
+      
+     type : 458752
+   -
+     name : AjouteLigneDansStatusT
+     procedure_id : 2290287011540495863
+     type_code : 14
+     code : |1+
+      // Résumé : Procédure exécutée dans le Thread principal depuis AjouteLigneDansStatus
+      // Syntaxe :
+      //AjouteLigneDansStatusT (<sLigneAAjouter> est chaîne)
+      //
+      // Paramètres :
+      //	sLigneAAjouter (chaîne UNICODE) : Chaine de texte à rajouter
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCÉDURE AjouteLigneDansStatusT(sLigneAAjouter est une chaîne)
+      gsStatusTexte += sLigneAAjouter + RC
+      SAI_Stat = gsStatusTexte
+      
+      
+     type : 458752
+   -
+     name : CB_Erreur
+     procedure_id : 2290287011540561399
+     type_code : 14
+     code : |1-
+      // Résumé : Procédure exécutée lorsqu'une méthode PrintConnect renvoie une erreur
+      // Syntaxe :
+      //CB_Erreur (<sProfilMx> est chaîne, <sMessage> est chaîne, <sErreur> est chaîne)
+      //
+      // Paramètres :
+      //	sProfilMx (chaîne UNICODE) : Le profil MX concerné par l'erreur
+      //	sMessage (chaîne UNICODE) : Le message associé à l'erreur
+      //	sErreur (chaîne UNICODE) : L'erreur qui s'est produite au format JSON
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // CB_Erreur("Une erreur s'est produite lors de la récupération du Status","PC_NO_PRINTER_SELECTED")
+      //
+      PROCÉDURE CB_Erreur(sProfilMx est une chaine, sMessage est une chaine, sErreur est une chaîne)
+      AjouteLigneDansStatus("-------------------------------------------")
+      AjouteLigneDansStatus(sMessage)
+      AjouteLigneDansStatus("-------------------------------------------")
+      SI sErreur <> "" ALORS
+      	AjouteLigneDansStatus("Détail de l'erreur: ")
+      	AjouteLigneDansStatus("-------------------------------------------")
+      	AjouteLigneDansStatus(sErreur)
+      	AjouteLigneDansStatus("-------------------------------------------")
+      FIN
+      AjouteLigneDansStatus("Profil MX concerné: ")
+      AjouteLigneDansStatus("-------------------------------------------")
+      AjouteLigneDansStatus(sProfilMx)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAAB6ragasMBWLfpsSyU19J6lAvYEqFWd1xYOjmHr1XHVZOVmechqLo1vKvfoAJhHeXL59P8BudVQfrBZ/U9vpjDz5RFibMKKm/84EA==
+  original_name : _11
+resources :
+ string_res :
+  identifier : 0x1ef1fec50027f193
+  internal_properties : CAAAAAgAAACyXVFaObH4lOGSEHJoZf1MD49w+XTw2LScZCP/urkWFwy+HYJdyQ3umA==
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

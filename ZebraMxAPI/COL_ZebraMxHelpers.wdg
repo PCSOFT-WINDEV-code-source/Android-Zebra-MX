@@ -1,0 +1,396 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : COL_ZebraMxHelpers
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x1c5d9772008d4fed
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAAClq42aj9l8LXnYRgIrtCumvnARNFOvHJE0JXrcgU9x1IuA+nQ6AJLhsLanLQy0b0/ULXuRquYdDdOsUoxwwWN6kF3KUyIXHr1mp47ENFwv6y5xtke99IMVBZZIBr/GimVPFsDsh8JUb7PJF3A2+lvAiRzlhcPdoiqTnH4bt1JUuq99knHX1JvcDJk9hTnOHTSz0iyN/b1lMEkLjFRqkWAu4BwEd1RUyaEBeIZ0dnkw0qifuJhINCOcTde1O8yvofw4KMZDSXfZvUOqNOQGgQ==
+     code : |1-
+      ///////////////////////////////////////////////////////////////////////
+      //							AppMgr									 //
+      ///////////////////////////////////////////////////////////////////////
+      EAppMgrAction est une Enumération
+      	INSTALLER = "1"
+      	DESINSTALLER = "2"
+      	METTRE_A_JOUR = "3"
+      FIN
+      
+      EAppMgrCible est une Enumération
+      	APK = "APK"
+      	PACKAGE = "Package"
+      FIN
+      
+      ///////////////////////////////////////////////////////////////////////
+      //							PowerMgr								 //
+      ///////////////////////////////////////////////////////////////////////
+      EPowerMgrOperation est une Enumération
+      	MISE_EN_VEILLE = "1"				// Met en veille le terminal
+      	REDÉMARRER = "4"					// Redémarre le terminal
+      	REMISE_A_ZÉRO_ENTREPRISE = "5"		// Efface le cache et les données système, n'efface pas la partition entreprise
+      	REMISE_A_ZÉRO_USINE = "6"			// Efface le cache et les données système ainsi que la partition entreprise
+      	EFFACEMENT_COMPLET = "7"			// Efface tout (système + entreprise) ainsi que la carte SD
+      	MISE_À_JOUR_OS = "8"				// Lance une mise à jour d'OS en mode recovery (tout automatisé)
+      FIN
+      
+      
+      ///////////////////////////////////////////////////////////////////////
+      //							WifiMgr									 //
+      ///////////////////////////////////////////////////////////////////////
+      EWifiMgrActionWifi est une Enumération
+      	NE_RIEN_CHANGER = ""
+      	ACTIVER_LE_WIFI = "Enable"
+      	DESACTIVER_LE_WIFI = "Disable"
+      FIN
+      
+      EWifiMgrActionReseau est une énumération
+      	NE_RIEN_CHANGER = ""	
+      	AJOUTER_UN_RESEAU = "Add"			
+      	RETIRER_LE_RESEAU = "Remove"		
+      	CONNECTER_LE_RESEAU = "Connect"		
+      	DECONNECTER_LE_RESEAU = "Disconnect"	
+      	ACTIVER_LE_RESEAU = "Enable"		
+      	DESACTIVER_LE_RESEAU = "Disable"		
+      	DESACTIVER_TOUS_LES_RESEAUX = "DisableAll"	
+      	SUPPRIMER_TOUS_LES_RESEAUX = "RemoveAll"
+      fin
+     type : 720896
+  procedures :
+   -
+     name : ExecuteProfilAppMgr
+     internal_properties : CAAAAAgAAABeclCE0pn0y1yU7nNnp6IUMGQYepsCXar5YI4jwF82SBNdtF1bLRy1/WmHa1r4dMznxx4A2vrpD/4tNC5EKRl54LwnAIA/ws5VTxtBdpCgMG+vJLGethH/7izJm5qQqVDvmh6uJZhu+SyBalX+0EidzezyDdm9dP4mPL8VRDby1ooFpvrpiWdmXR61CUrw3so3GVD/hGLJ/jgMZjCoB5Y5m0KiKN5CE4Xbs27eY9ViBGscUZQoNSnTeHpaMxNlK1wVfM/9QyYcsPQ7R1PxRBIU++PZC9xnlKD0qmJLHgOcj2/4X1SQ7jk=
+     procedure_id : 2043956858658372528
+     type_code : 15
+     code : |1+
+      // Résumé : Cette procédure permet la réalisation d'opérations de gestion d'applications
+      // https://techdocs.zebra.com/mx/appmgr/
+      // Syntaxe :
+      //ExecuteProfilAppMgr (<eEAction> est COL_ZebraMxHelpers.EAppMgrAction, <sValeurCible> est chaîne, <sCallbackSucces> est chaîne, <sCallbackErreur> est chaîne)
+      //
+      // Paramètres :
+      //	eEAction (COL_ZebraMxHelpers.EAppMgrAction) : L'action à exécuter (ex: Désinstaller)
+      //	sValeurCible (chaîne UNICODE) : Le paramètre associé à l'action (ex: un chemin vers un fichier apk)
+      //	sCallbackSucces (chaîne UNICODE) : procédure appelée lorsque le profil a été exécuté avec succès. Prototype: PROCÉDURE CB_Succes(sProfilXML est une chaine)
+      //	sCallbackErreur (chaîne UNICODE) : procédure appelée lorsque l'exécution du profil a rencontré une erreur. Prototype: PROCÉDURE CB_Erreur(sProfilMx est une chaine, sMessage est une chaine, sErreur est une chaîne)
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // ExecuteProfilAppMgr(EAppMgrAction.INSTALLER, "/sdcard/PrintConnect.apk", "FEN_AppMgr.CB_Succes","FEN_AppMgr.CB_Erreur")
+      //
+      // Voir le code du champ BTN_Executer dans la fenêtre FEN_AppMgr
+      //
+      PROCEDURE ExecuteProfilAppMgr(eEAction est un EAppMgrAction, sValeurCible est une chaîne UNICODE, sCallbackSucces est une chaîne, sCallbackErreur est une chaîne)
+      
+      // On commence par créer une chaine XML par defaut de l'AppMgr
+      // La documentation de l'App Manager se trouve à l'adresse suivante:
+      // http://techdocs.zebra.com/mx/appmgr/
+      // Il est possible de générer ce fichier manuellement d'après la documentation
+      // ou d'utiliser l'outil StageNow et la fonction "Export to MDM" 
+      // http://techdocs.zebra.com/stagenow/3-1/about/
+      // http://techdocs.zebra.com/stagenow/3-1/stagingprofiles/#exportingstagingprofiles
+      // http://techdocs.zebra.com/stagenow/3-1/csp/app/
+      sXMLAExecuter est une chaîne = [
+      	<?xml version="1.0" encoding="UTF-8"?>
+      	<characteristic type="Profile">
+      	<parm name="ProfileName" value="AppMgrProfile-1"/>
+      	<characteristic type="AppMgr" version="0.5">
+      	<parm name="Action" value="%ACTION%"/>
+      	<parm name="%CIBLE%" value="%VALEURCIBLE%"/>
+      	</characteristic>
+      	</characteristic>
+      ]
+      
+      // les paramètres variables ont été volontairement entourés de % pour faciliter leur remplacement
+      
+      // Création du tableau associatif qui contiendra nos champs variables
+      taMesDonnéesVariables est un tableau associatif de chaînes UNICODE
+      
+      // Modification du tableau associatif en fonction de la commande à exécuter
+      taMesDonnéesVariables["%ACTION%"] = eEAction
+      
+      SELON eEAction
+      	CAS INSTALLER
+      		taMesDonnéesVariables["%CIBLE%"] = EAppMgrCible.APK
+      	CAS METTRE_A_JOUR
+      		taMesDonnéesVariables["%CIBLE%"] = EAppMgrCible.APK
+      	CAS DESINSTALLER
+      		taMesDonnéesVariables["%CIBLE%"] = EAppMgrCible.PACKAGE
+      FIN
+      
+      taMesDonnéesVariables["%VALEURCIBLE%"] = sValeurCible
+      
+      // On exécute le profil
+      ZebraMXExecuterLeProfilAvecDonneesVariables("AppMgrProfile-1", sXMLAExecuter, taMesDonnéesVariables, sCallbackSucces, sCallbackErreur)
+      
+     type : 458752
+   -
+     name : ExecuteProfilClock
+     internal_properties : CAAAAAgAAACs9M1D2QdX4Bdo6ozw/AS2oxxJb+OlHoSfiy6TjrOZyw8GR/6mKWrQM1aEvdJTJNF82eFU3UajVn8vaNoYq+8qBd6NaLwrs1cS0F9K5RWPZA2SdUdQuglA8Pw4Y9u42/8BtHt3GTCd140Kn3faBwO9aF8m3nhqutdtuziayoKwp/VOxCBjcBWtegl/LtlR6IDz5lKvTIiVV1sjnDsVwMF2HbMHol0D5ydvzGTgZuiFjg2490++tgOW5mP3Hip/genaRIJAStVWqJeYOl5wGQFwXl2iNInzMTIJ1W+kuJOXNCCOLsJn7bu3M6IGRSaDSZyLfODf5yU4Csf9hx54PyT5jJun
+     procedure_id : 2043957060522013121
+     type_code : 15
+     code : |1+
+      // Résumé : Cette procédure permet de configurer la date et l'heure de l'horloge du terminal.
+      // http://techdocs.zebra.com/mx/clock/
+      // Syntaxe :
+      //ExecuteProfilClock (<sFuseauHoraire> est chaîne, <sDate> est chaîne, <sHeure> est chaîne, <sCallbackSucces> est chaîne, <sCallbackErreur> est chaîne)
+      //
+      // Paramètres :
+      //	sFuseauHoraire (chaîne UNICODE) : le fuseau horaire au format Olson ou GMT+-/HH:MM. ex: "Europe/London"
+      //	sDate (chaîne UNICODE) : la date que l'on souhaite configurer au format YYYY-MM-DD. ex: "2020-07-01"
+      //	sHeure (chaîne UNICODE) : l'heure que l'on souhaite configurer au format HH:MM:SS. ex: "07:13:00"
+      //	sCallbackSucces (chaîne UNICODE) : procédure appelée lorsque le profil a été exécuté avec succès. Prototype: PROCÉDURE CB_Succes(sProfilXML est une chaine)
+      //	sCallbackErreur (chaîne UNICODE) : procédure appelée lorsque l'exécution du profil a rencontré une erreur. Prototype: PROCÉDURE CB_Erreur(sProfilMx est une chaine, sMessage est une chaine, sErreur est une chaîne)
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // ExecuteProfilClock("Europe/London", "2020-07-01", "07:13:00", "FEN_Clock.CB_Succes","FEN_Clock.CB_Erreur")
+      //
+      // Voir le code du champ BTN_Executer dans la fenêtre FEN_Clock
+      //
+      
+      PROCEDURE ExecuteProfilClock(sFuseauHoraire est une chaîne ,sDate est une chaîne,sHeure est une chaîne, sCallbackSucces est une chaîne, sCallbackErreur est une chaîne)
+      
+      // On commence par créer une chaine XML par defaut du profil Clock
+      // La documentation du profil Clock se trouve à l'adresse suivante:
+      // http://techdocs.zebra.com/mx/clock/
+      // Il est possible de générer ce fichier manuellement d'après la documentation
+      // ou d'utiliser l'outil StageNow et la fonction "Export to MDM" 
+      // http://techdocs.zebra.com/stagenow/3-1/about/
+      // http://techdocs.zebra.com/stagenow/3-1/stagingprofiles/#exportingstagingprofiles
+      // http://techdocs.zebra.com/stagenow/3-1/csp/clock
+      sXMLAExecuter est une chaîne = [
+      	<characteristic type="Profile">
+      	<parm name="ProfileName" value="ClockProfile-1"/>
+      	
+      	<characteristic type="Clock" version="0.2">
+      	<parm name="TimeZone" value="%TIMEZONE%"/>
+      	<parm name="Date" value="%DATE%"/>
+      	<parm name="Time" value="%TIME%"/>
+      	</characteristic>
+      	</characteristic>
+      ]
+      
+      // les paramètres variables ont été volontairement entourés de % pour faciliter leur remplacement
+      
+      // Création du tableau associatif qui contiendra nos champs variables
+      taMesDonnéesVariables est un tableau associatif de chaînes UNICODE
+      
+      // Définition des valeurs associées aux champs variables
+      taMesDonnéesVariables["%TIMEZONE%"] = sFuseauHoraire
+      taMesDonnéesVariables["%DATE%"] = sDate
+      taMesDonnéesVariables["%TIME%"] = sHeure
+      
+      ZebraMXExecuterLeProfilAvecDonneesVariables("ClockProfile-1", sXMLAExecuter, taMesDonnéesVariables, sCallbackSucces,sCallbackErreur)
+      
+     type : 458752
+   -
+     name : ExecuteProfilPowerMgr
+     internal_properties : CAAAAAgAAABCeMjtJo97/8LPYZNl3hrMhCK8HkfNX4VMLnoZly41rUeurXbRznPmk50d4rpuZPZ01QsM61D8kKWsW8R6Sj/Ca7ladB+NT9VG9OyPwbreO59HzjP29PE93KnSooqBKLWrY7mX20FdX+Cenbf5iq5FD7bq3D7P1h/gG24x0BFxeCd4FOS0DKdN/FVZTBR6FRJweODBb0cMq4l5y6yJ4UM9cy00Bx3kwCYh2HK3Qo0ap5u9CKTpCAXVc1lbMnst4mkABdLndrj016lQ4b5DcAwgY6Eq8ClCRgTIDsBjFPeLZgKrloasjnGnzvchOLhejm/MTUypaoV/vI7CAl9poImT8nCRqipEH+uFwGyZVdnUe/lEvM27qKtlBr4eFcPMsfAPi/QQhFBk+6VaHtQCALQEYpF2S5Ke1v2sRC/hR7hvENkmHEbhbZ/y5ZdaWouMGrg4TPhtKr45
+     procedure_id : 2043957223730873999
+     type_code : 15
+     code : |1+
+      // Résumé : Cette procédure permet de réaliser des opérations sur le système d'exploitation d'un terminal Zebra
+      // http://techdocs.zebra.com/mx/powermgr/
+      // Syntaxe :
+      //ExecuteProfilPowerMgr (<eOperation> est COL_ZebraMxHelpers.EPowerMgrOperation, <sCheminCompletVersLeFichierDeMiseAJour> est chaîne, <sCallbackSucces> est chaîne, <sCallbackErreur> est chaîne)
+      //
+      // Paramètres :
+      //	eOperation (COL_ZebraMxHelpers.EPowerMgrOperation) : Opération à exécuter (ex: EPowerMgrOperation.MISE_EN_VEILLE)
+      //	sCheminCompletVersLeFichierDeMiseAJour (chaîne UNICODE) : Chemin vers une image d'OS. ex: "/sdcard/FPU_ATLAS_02-32-04.00-OG-U00-STD.zip"
+      //	sCallbackSucces (chaîne UNICODE) : procédure appelée lorsque le profil a été exécuté avec succès. Prototype: PROCÉDURE CB_Succes(sProfilXML est une chaine)
+      //	sCallbackErreur (chaîne UNICODE) : procédure appelée lorsque l'exécution du profil a rencontré une erreur. Prototype: PROCÉDURE CB_Erreur(sProfilMx est une chaine, sMessage est une chaine, sErreur est une chaîne)
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // ExecuteProfilPowerMgr(EPowerMgrOperation.MISE_À_JOUR_OS,"/sdcard/FPU_ATLAS_02-32-04.00-OG-U00-STD.zip","FEN_PowerMgr.CB_Succes","FEN_PowerMgr.CB_Erreur")
+      //
+      PROCEDURE ExecuteProfilPowerMgr(eOperation est un EPowerMgrOperation, sCheminCompletVersLeFichierDeMiseAJour est une chaîne UNICODE, sCallbackSucces est une chaîne, sCallbackErreur est une chaîne)
+      
+      // On commence par créer une chaine XML par defaut de l'PowerMgr
+      // La documentation du Power Manager se trouve à l'adresse suivante:
+      // http://techdocs.zebra.com/mx/powermgr/
+      // Il est possible de générer ce fichier manuellement d'après la documentation
+      // ou d'utiliser l'outil StageNow et la fonction "Export to MDM" 
+      // http://techdocs.zebra.com/stagenow/3-1/about/
+      // http://techdocs.zebra.com/stagenow/3-1/stagingprofiles/#exportingstagingprofiles
+      // http://techdocs.zebra.com/stagenow/3-1/csp/power/
+      
+      // On va mettre la structure XML dans une chaine
+      sXMLAExecuter est une chaîne
+      
+      SI eOperation = EPowerMgrOperation.MISE_À_JOUR_OS
+      	// Mise à jour d'OS
+      	sXMLAExecuter = [
+      		<?xml version="1.0" encoding="UTF-8"?>
+      		<characteristic type="Profile">
+      		<parm name="ProfileName" value="PowerMgrProfile-1"/>
+      		<characteristic type="PowerMgr" version="4.2" >
+      		<parm name="ResetAction" value="%OPERATION%"/>
+      		<characteristic type="file-details">
+      		<parm name="ZipFile" value="%FILEPATH%"/>
+      		</characteristic>
+      		</characteristic>
+      		</characteristic>
+      	]
+      SINON
+      	// Suspend, Reboot, nettoyages, etc..
+      	sXMLAExecuter = [
+      		<?xml version="1.0" encoding="UTF-8"?>
+      		<characteristic type="Profile">
+      		<parm name="ProfileName" value="PowerMgrProfile-1"/>
+      		<characteristic type="PowerMgr" version="4.2" >
+      		<parm name="ResetAction" value="%OPERATION%"/>
+      		</characteristic>
+      		</characteristic>
+      	]
+      	
+      FIN
+      
+      // Les paramètres variables sont volontairement entourés de % pour faciliter leur remplacement
+      
+      // Création du tableau associatif qui contiendra nos champs variables
+      taMesDonnéesVariables est un tableau associatif de chaînes UNICODE
+      
+      // Modification du tableau associatif en fonction de la commande à exécuter
+      taMesDonnéesVariables["%OPERATION%"] = eOperation
+      
+      // Dans le cas d'un update d'OS, on rajoute le filepath vers le fichier ZIP de mise à jour.
+      SI eOperation = EPowerMgrOperation.MISE_À_JOUR_OS ALORS
+      	taMesDonnéesVariables["%FILEPATH%"] = sCheminCompletVersLeFichierDeMiseAJour
+      FIN
+      
+      ZebraMXExecuterLeProfilAvecDonneesVariables("PowerMgrProfile-1", sXMLAExecuter, taMesDonnéesVariables, sCallbackSucces, sCallbackErreur)
+      
+     type : 458752
+   -
+     name : ExecuteWifiMgr
+     internal_properties : CAAAAAgAAAC4PtXY67s8gWOyv797f4RUqx8zwrHdK4XLR3WChELQYk1biG4WAyj0amXe3nxqvZDuRb4e7MGq+ETb075zn2UO8MzjZKP2oir22U0nJNAN8iVWizl/al/wnwm9zNZWmEcDpTZ4JbK9BbMtt8i54XxHndfWqY+deiCTTZkgavVFOff70CpMPvqrM54WBuQFUMVhYDNgkdKH89DN48hUGZ3VSOgYUY+eft2udCEwWbcdKJ+IO6cXfLa6dZ/BpSxsCKlv7HlwDyNLSssq+dJ1GRYc8/01hP73ndd2feCc1AcLmhyNpDVHsHiA/5Gd1gE7SaglebfjAWmAYnQyHB0drG0E3LDnkYpmpR9w2YVW1r3W2oe6W2ewoCQzIdUbVzvBUrpdr8h2sgFCN6ZLOeIyJ+ncsQZQLQN5AH0YFQRBbB2MCgKkfX+qndypkl29PAxnQJW0
+     procedure_id : 2226913403088755829
+     type_code : 15
+     code : |1+
+      // Résumé : Cette procédure permet de réaliser des opérations sur le module WIFI du terminal.
+      // ex: configurer un réseau wifi, se connecter à un réseau, se déconnecter, configurer le DHCP, etc...
+      // https://techdocs.zebra.com/mx/wifi/
+      // Syntaxe :
+      //ExecuteWifiMgr (<eActionWifi> est COL_ZebraMxHelpers.EWifiMgrActionWifi, <eActionReseau> est COL_ZebraMxHelpers.EWifiMgrActionReseau, <sSSID> est chaîne)
+      //
+      // Paramètres :
+      //	eActionWifi (COL_ZebraMxHelpers.EWifiMgrActionWifi) : L'action à réaliser sur le module WIFI. (ex: EWifiMgrActionWifi.ACTIVER_LE_WIFI)
+      //	eActionReseau (COL_ZebraMxHelpers.EWifiMgrActionReseau) : L'action à réaliser sur la configuration réseau (ex: EWifiMgrActionReseau.SUPPRIMER_TOUS_LES_RESEAUX)
+      //	sSSID (chaîne UNICODE) : Le SSID concerné par l'action réseau
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // ExecuteWifiMgr(EWifiMgrActionWifi.ACTIVER_LE_WIFI, EWifiMgrActionReseau.CONNECTER_LE_RESEAU, "PCSoftBox-25", "FEN_WifiMgr.CB_Succes","FEN_WifiMgr.CB_Erreur")
+      //
+      PROCEDURE ExecuteWifiMgr(eActionWifi est un EWifiMgrActionWifi, eActionReseau est un EWifiMgrActionReseau, sSSID est une chaîne UNICODE, sCallbackSucces est une chaîne, sCallbackErreur est une chaîne)
+      // On commence par créer une chaine XML par defaut du WifiMgr
+      // La documentation du Wifi Manager se trouve à l'adresse suivante:
+      // https://techdocs.zebra.com/mx/wifi/
+      // Il est possible de générer ce fichier manuellement d'après la documentation
+      // ou d'utiliser l'outil StageNow et la fonction "Export to MDM" 
+      // http://techdocs.zebra.com/stagenow/3-1/about/
+      // http://techdocs.zebra.com/stagenow/3-1/stagingprofiles/#exportingstagingprofiles
+      // https://techdocs.zebra.com/stagenow/4-2/csp/wifi/
+      
+      // On va mettre la structure XML dans une chaine
+      sXMLAExecuter est une chaîne
+      
+      // Profil WIFI
+      sXMLAExecuter = [
+      		<?xml version="1.0" encoding="UTF-8"?>
+      		<characteristic type="Profile">
+      		<parm name="ProfileName" value="WifiProfile-1"/>
+      		<characteristic type="Wi-Fi" version="4.4">
+      		    <parm name="UseRegulatory" value="0"/>
+              	<parm name="UseDiagnosticOptions" value="0"/>
+              	<parm name="UseAdvancedOptions" value="0"/>
+      ]
+      
+      SI eActionWifi PAS = EWifiMgrActionWifi.NE_RIEN_CHANGER ALORS
+      	sXMLAExecuter += [
+      	        <characteristic type="System">
+      				<parm name="WiFiAction" value="%WIFIACTION%"/>
+      			</characteristic>
+      	] + RC
+      FIN
+      	
+      SI eActionReseau PAS = EWifiMgrActionReseau.NE_RIEN_CHANGER ALORS
+      	sXMLAExecuter += [
+      			<parm name="NetworkAction" value="%NETWORKACTION%"/>
+      			<characteristic type="network-profile">
+      				<parm name="SSID" value="%SSID%"/>
+      	] + RC
+      	
+      	SELON eActionReseau
+      		CAS EWifiMgrActionReseau.NE_RIEN_CHANGER
+      			
+      		CAS AJOUTER_UN_RESEAU
+      			sXMLAExecuter += [
+      				<parm name="SecurityMode" value="0"/>
+      				<parm name="UseDHCP" value="1"/>
+      				<parm name="UseProxy" value="0"/>
+      			] + RC
+      		CAS RETIRER_LE_RESEAU
+      			
+      		CAS CONNECTER_LE_RESEAU
+      			
+      		CAS DECONNECTER_LE_RESEAU
+      			
+      		CAS ACTIVER_LE_RESEAU
+      			
+      		CAS DESACTIVER_LE_RESEAU
+      			
+      		CAS DESACTIVER_TOUS_LES_RESEAUX
+      			
+      		CAS SUPPRIMER_TOUS_LES_RESEAUX
+      			
+      	FIN
+      	
+      	sXMLAExecuter += [
+      			</characteristic>
+      	] + RC
+      FIN
+      	
+      sXMLAExecuter += [
+      		</characteristic>
+      	</characteristic>
+      ]
+      
+      
+      // Les paramètres variables sont volontairement entourés de % pour faciliter leur remplacement
+      
+      // Création du tableau associatif qui contiendra nos champs variables
+      taMesDonnéesVariables est un tableau associatif de chaînes UNICODE
+      
+      // Modification du tableau associatif en fonction de la commande à exécuter
+      taMesDonnéesVariables["%WIFIACTION%"] = eActionWifi
+      taMesDonnéesVariables["%NETWORKACTION%"] = eActionReseau
+      taMesDonnéesVariables["%SSID%"] = sSSID
+      
+      ZebraMXExecuterLeProfilAvecDonneesVariables("WifiProfile-1", sXMLAExecuter, taMesDonnéesVariables, sCallbackSucces, sCallbackErreur)
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_SansNom1
+resources :
+ string_res :
+  identifier : 0x1c5d9767008b2514
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

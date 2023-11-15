@@ -1,0 +1,575 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FEN_Demo_Zebra_MX
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : FEN_Demo_Zebra_MX
+ identifier : 0x2c51a6f3117c7845
+ internal_properties : CAAAAAgAAAAg4kwWhQHSY+QXx9htIaB/lO9U5hP4RMPmsWBz09VLTPSQ3fhUVU3CoohxcklzNyTtoXwdAZKNSnYahYrmovsU96J/H4NJxVky8r4ycyrbmJ2iZlkhFV/icD/GICn7PpfiyVY03Pson1O56NZwF1J4BOUxKF5jUII9sHsYuWD9TyaMXRh+rOvOwd8Pp1WyGszzuiZQG6PVrmkPfn9g2UZW2Zh4DTDQwsfizVyINg/b0RIxqSdqCeicTtCcRN+oGoXRwVU6bds4HOMr2xx6t9BXHR5IGgeKVBNBzrgTZJ7VFtDAy0C/JgRmk0/i1+WUgc9N8E6sUoUKkro1ghtC8N9vXsgWRiIAuBtv0CQ0M/SNkKLPo11lL7gkiFP5a4rMaw/haHSFD4GCIvNm7v3DQP+Aulh957E0+VwmgcIETM7hb0TNkcYqSyW6O/nL4tGgiGcsNwTTOaZx4arvAmYp13OkCU+Lc3kK1qgJE4O4+N2RrV+kOtSQ+lhYozvzxr25yOauZSuFKqbcE9shEkMtT+7t3j++5s16EeR21ZL1NbrQPs4bUmpkCVuZX2cg60QaL/v6IWmYI9wzKeyP244kw7mKZZVJdt4pMNFLfg1qZ9/aT7QwnAKo85dwcWJR1koj8pYwdcwQsVlAWhoe95/TCmJyZpP+nf+sNkDDyPd7YSEHrkkIernHqEZSEGp6JWjFArRmF1mYk1iYa6KAE+FLklAw54zx5cr3OjldTbTRUoCPY4L9E3sRgSFvxHT0UxexY1OUvhJ8OI2XqNwmw8/O0D+3Yd9M6pwINl8Dx/o8Kz5ldoe5ODqK/NKIclyyjH5B56eV+5RHDXM+D49bB0fTA4ZUww9YT1zYBBc6njd/P9wl4nRZ+k7pGLASAbV2wBcg3f23s8wpwAj9tt/HfX0DFMIoWnWPTC6M63hMgttoncXJLSkpyi5MJjFYvcffmaxbozRckCX5c8geZOw4qxnCBHifptfaTc5/d0DucvpJEy9Cgw6hL/w/OJenwweoUOXCYrKcDQq0Ikwr/Ej3VyhMUtlp89YQIQMWiDS9JN3h52FfieQMfVwHKXQo9gfaViN5zP9hSiirP84k7NPhARGyc5h89ottMBWGmzXIZ3M+zzYwrsiszXEIf2WlV6GSCDHnAnZtqjb2Sev4s+SXTg015pNbTwu0tlNMwVTO0AbjzJ7BjWIHamE2KLh0ou+dzDVHKgoUiWwUMd/SPdwhaAynSZAVnmw0D/acylbt2Gzf2KWqMGmfQsDz7O3O/C/Y/fYnTdEpQ9m0Toqib8wX+AF443C0rW71BqC78qRFYdeypvNvfQl4C1sTsq0q8QN2793ZFnYzkn1e9s05DsLSYUZnfexDoXHYGG5JLWUJKmiGfZYnw5UcmgmwCVavuyTi2CZu5+eVbdmel0VP/lh/XJKyfDR8G1oEbO32QT61147BWXTz0Y0F3j+lUQPEGURnX7s=
+ properties :
+  width : 320
+  height : 407
+  heightMin : 480
+ controls :
+  -
+    name : SAI_Stat
+    identifier : 0x2c51b71800927d63
+    internal_properties : CAAAAAgAAAD60Qmgk+bmUL9CfU3T+CY87n0zG6Jv2EjhhhVP2tiZMG4TG6pv0Mi8toa9n/lNnmEEPTmd84CurwhzQsnV5c4Owl0iIp8CbA/LOT+zptlnK69YQrkrILuL3OS1IQXWczakhAOA5N9uBeTJ1H8LV/Nof+unLafpj1dT2jgBzuLWCD/vwojzrjwKj6nsNL0JQJsK/IU9L/yuIjK2XSTklAP0nz4i81wAC5pj47CyfQqTngo7miWJNeStw0xI0LH4bZPk6fDtXGENFMFcgccR5ZYW3lX+wOwM6Pzx6qcqN+4L6bLqDeXy+0c8IkKkLtmEM3FbrVxqP9POiu1bflqQ+BqHPNIMnq8OP3PYQqUu6ttQIEggtRUjb6DlRNPL7fRA1pc/bva5nHbZXB8S7nrr10Lld7/6GBKk7H540RkTHdc88GwDFbz4SIt5+ZMrxa8CMVCMayP1pVJh7phQyAyyisNZWjjACi11wbHOpWwi32LwdcrTCNPMFB6aYKWVRLKX9dnRGSIy/yKeAixyLgUZfO0sns/17QwhqTmE0m/VDBGVKMQ0U12/hUOpn1JK2ea0DW+f9G8kdnwK6mO6XkX7Vgi2f9kJJGEhiJ0P63kugyAPZua9tmAuqTn65R2SP0VJkh+URe9Jbgelu2oyL9uwYP/vYBtg8gFIrgSXQmBFMN3gbq0GO4yvkPi8w2VxjJHKTOYZprkiS3uiUs8+STfzN761H1YQtHbW8pA6VXnRLPQyuX+6o1JgMEGc2zZo+SxsGl6cLBSdOtEwrK2xEoA9HcBIRvu7v60fJfkf/6+bKHmwgXy5Wm7awRS6MGIH1rtn8UUNB1xJ4tAGSXhU1lZrbr8K9txyqjeqL/Zqs8bSDB35p/iUZVrUu9ZeO6F68k18fXdH7/pP5HeRRofwWyUXbjcCXWiZ30+W0EsE62iVeQ+/3DS3JJpom4f7wycUh0l40rWYpxgxwFIdEOP7wq7nmTIyx47iwMW+5AQGTfRugc9LfPFfNqhXSUxHWB46qRipj8+DHfbygqyKW4Ghlw4PWjv4BueGt/SsixmspWf/rAVrmi1obv7kKjCSgAE0BQ0TsPHs1bjpyQ/qO0NX1xFm5xDp7rhgOiV9NrsCZGKGxEjCGhytwfHkQSgZO9QDkEXivYX30aBjyBCGzjyy8IOMErm1cIqg+8m2sPJe6MFAzcDG8oG3S4M74HmLPRFXctj7+OWaFhrFAsWWRiRGARHjhcyB1Zv4BjtGqKT3hjdSIoNSJRFrXl8Yz/Lvo0lxvUYLMP+D8h6PEnyyzZ05LVbLPU8xlq15AUHwf8hcnJLINqElVuEx1/9cAFdUo/roCcr6undV8vFmgiGc5LUsmDhfI3CIW1f5MkJLHlfURA4R95znRieHmIxaL4uDpVPmIO6htWyjXaP0CLSPRs6ajvp8NjcyH5oGZu2uzI2uLdAXFqZ9sstYdVEoWjmNl7y4u/wsK7xQC6CLPVb3+U16Rhs1nd3pjPKjkw6fYYrghuBwaxJVhOVyskx3+Mqw0PfMJ1qJi5a+i3Omjom82/kmOcGonRmUIbxxLTpigXxb7hOdkky1mw2JF4TLPVix1/zlRC9ogj7+Sz8Ie6Q7I5M1xl/BadzbSGiBysKTOEQu9Ac3QS27MfZWMnldI34Z9fMp5cQOiw7re09KLxxfKOQgxZ9aUHnUGzMtZ82kTVLD2LvqdeTtR5wPBfw2a4hedsVO7rJFRftIxdTTII0enEv6U483IgHAg3ltIgZMWeX/WMRfz8Yx28KAMOSVvkT4+fkCicHZJy8jErkaAw7F0tlT0zduL3Z7o2Eb9zInRWY79sr6AxYQdRpzcwT2NoWdFuE5JgLOKnBqq+s3g6rawkjCntOAJi9S1GwPAd7czDCjSAzH90N8gimJ3yjj7HJnKTVnO3yEUOYASsttrfGcBG+8aqxnTA==
+    properties :
+     x : 8
+     y : 278
+     width : 304
+     height : 120
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : IMG_SansNom40
+    identifier : 0x2c52d05807a0c230
+    internal_properties : CAAAAAgAAADEMwq1kLAzML8VLcA8NBOw6ekVb/zrnBhrrYhERINXiEOHiZ1vk9pAF8lQDGd8QZDmid9JdWl15Uh022kJgXChh0LaDtykBVDamsvdpEtTnfZDZU58yFulwFXdhEeky1X160EAeSeLRIjSHIyfEgdA2N2S+bNQ0dOKMiB3uCsl9guiQyZw3t2GCV6I2CVYIeWIHsgVAr8H72k1CrMP1QBc/BFZF2Z6DFe8j21IF9d/aGIOrtbINBE/00s7Ekvj1NUNsqyqUE88EBtElZuBK9y37UxEN+PxxkFKST1DIANLoyX4pPBC5Hf7SachYa/LbVUhhxKaZIQQ4+IEwnhkfXAEdSYhBN1i+4Dry8L6BVyB+nNs3eXEvAVUBeJHt1sqHcNIs66BkMXlxvTLFPR7x9h/Zkrfzvk8WUJ4tA/nzYhsSfUKBJGZXFGSvcoMAsFM3XZgPAaxyXhAg96spjbAPrNGZ7b3a3Dd/gjZV34SdTIAT7bFmQfzrJRYu47nJjHcJg2Bwp9PTR6LSyhm9s7pTjtRYhIAN+Kl/MgZrVRgrheaec385cckEzFWf/86SGxZ2tMrl23B/A6+5sTGLiYBsESdp3+NXFWygE4GdQQR0EfiCTl17lGZxPzgsLXDvuMCtteYBbJvCsaqgNXisSBO/Wn7LdCsPVEL8Qe8v47gG0SbdSUSVNjD/iVoF7uUBVrdJXo3998Hv/4+3ZOHuw0s9bsYFqCzOFdQP8SToiRE5Y1NZEgSpx3zpmGxCVW6zcCqzdSpWv2pgjj6IiOKKXf9A9GFPYlPMO7c1QmRrKjPDBrj6TWklqNHkgcug74Aj96VzBrGw8bBOhjPg5QJ3ewJyFa9hYTte9EOgK3T1f1YN92XySXyE5JPHufwCDiQgYf8qMJl+MFCKfeAROzIfs6oRqk2W14w4jpTirCy+fSw1bgc3P7IWjPw71Qen3BlsrKrweDQ6wLkcecaMz4JSVpiiz58owZwdvZF/ygqVUbXpAs5RZ/oIvkP3tNoLDiq+O0749RH8y42gWK01HOc5IIwployD8q2nAvj/oa+VK/svqZPcHNS+Vy+Iz5Ggarf+9dYXC43bg/uA2waQ1ncqMj74n4RVjT8CeWFKQcCuGLKCcl2rvv1WHoNnR4d7FxaG04mlXbahXyBI3AaYFfEgdWU8tc68GnjSJV78lIgetnS33zFDCExFOLWPNXYkFAsFj5BegA3aWM5lYodGv6K8dz/SglV97VB27jSpnPW4AgGbBU7uvTox7w=
+    properties :
+     x : 8
+     y : 8
+     width : 304
+     height : 241
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : ZR_Exemples
+    identifier : 0x2c54107800df41b1
+    internal_properties : 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
+    properties :
+     width : 320
+     height : 270
+    controls :
+     -
+       name : LIB_NomCSP
+       identifier : 0x2c54111301689eac
+       internal_properties : CAAAAAgAAAD9v8Y/obV1ILiOXINzQH7V2kF0GFHluRr59k3OZVb1wMvUmbJHCsuVRwhH2deGu34DrxwbtMB52hTk5uR53zJ50OL4wkXNfoxh5l7hD2bGvFv+ySrwhh/dMBqp1NLwMnIZeEyRyNGVgIRlpIq2TeLujjf1PB+pPW5Rx5CF588OEjDOnr0Ajc9k3uSib7L2BC+8QEPfipYha9prkrmZXxBDJPqmYbEXRa18PMqt0OT5oFLlNL7L5uPiHfr5Ksvgvi2VEwQM3/hv15cKZyYHUjwbeibPtz9bBVhyuq3F7be4rel5fZhF4J/Rmxu5267Fz7zuhLDDMJxysjO+ZMsjP3+I40NCcw5so8NXLfxdPnqMLkHYt/RFFNBnhwgvS1XnhZfSODi0E/nSlIMN26g8I1SJ97FZUAJBk6bojlDNH3oaXQdoTLIH+snUV8NiaS2YXQAKYFxK0vEPWda812Y7BJOMWeYfEO+a3oJtFjyxoP3fquJf2BfYB7ks95gci0fDvO9/2VzOW95WwVbZq5VPPmXw4QXF4ULxWsj7ykz9Bzo91uJW/hM844NOjeYCIzaaRfMf1rp/AxX/eiZPPErAEUqLuirJvcHhwHVYVAyRhixh2SrJo7ayyS834Gn6Z2vmC8q4gcTU/ljNoUBv1lDNZiH8ZvLkH0Y/0jp9Fd5pT4fQ9Y3yfg==
+       properties :
+        x : 8
+        y : 8
+        width : 299
+        height : 32
+       type : 3
+       code_elements :
+        type_code : 2
+        p_codes : []
+     -
+       name : LIB_Description
+       identifier : 0x2c5411290171f48c
+       internal_properties : CAAAAAgAAADMajbJB6lGlxVmqmdGaDlZD2YlTPymZ10v8LttVdXvvrNbsR2J1NBYELaTrvzmT/lXozArjh+M1TAe7QHmij/4k2ttmsRZtYWcpZ0UO5cTfcbzPhD8OD7uOGDF4dLfh6iMS2/M/yvZGH94L9YvRtla2Vt75DRRV/NxhdVS7YYB6fGdJmJ10CHpalAhw3BK2952DMBOTpm/MQTMS8fi20TWCShAFLWqFXmHbSvaMVl4ZZ75hpbvxbPv1hmSHgIwB5dQ0S+P3EFXbSEWCWOexIfm49925SmZs+BSPYVEM/r/dORFYEO3Jc+yBE/1qEF4Oz/k1hboW7pZ7JEpF4ctGwdaS1/0OSc9YIAIXoAsG8ALRZHOCf3XRcxp+OVwglc3amKwdzQKaFIh8iKkJIskdJZ28BOY7kIvHDiUqWxlZ9qUjGaUu+9tx2n0RAc9R6qTrGey6KunQX3+K2VK8sn/+B3Q2FBvrUzQkAddkR/weF5vOgx+InRZJT1bOEVD6nZQumGVl1r01uESRyBsaTvgu98IxRHqDctKoyCNhhxC1vjiSZNZtcGWj5p2JblIDNgN5ogamvHxHHfXcvOU11oOrDiG+x0agXULzULJnLdGKev4W99vL3igl4zSHdIldly1/zml/Ypc7TfJ0NbCIDl+0sfwP3oWhGgUeTqzth+lR44NQT7wokfj
+       properties :
+        x : 8
+        y : 48
+        width : 299
+        height : 19
+       type : 3
+       code_elements :
+        type_code : 2
+        p_codes : []
+    columns :
+     -
+       name : ATT_NomCSP
+       identifier : 0x2c5410ba00f04333
+       internal_properties : CAAAAAgAAABfA/zR285m6W07PteTP/KaSiPJTGMR789fGnl6NWd7mJDK2NnnfyPytdwo5xHUT0fi8y2OergEicj1NR5AK6GdP66MNJouM7p3oFM+d8OWvfHMwK1xQ7u02UCk4tOuJD04TMBqYdvWZy31ob8J/3MJAdY/wlBDdPYoSxzHPBYXGpgx4rmjU1FlhowBtYvxlfiWusdQKNUmxw==
+       type : 3
+       content :
+        identifier : 0x2543d87c074be3d6
+        internal_properties : CAAAAAgAAADIEYpQfUimeLzzNy/mKFsGMq1zJgbJmcY9uDYGNsFzBLq50HOMD+W5y19k2FdI7yI/kbK5EIZc094bungP7I5n/r72TwLBp7PqcOBKvsQaQ7ZJzJtDbTI7Wd5J/RsS63Q049cp+nBSaB3dFjH9FRyyWWrZSdgLnRD7IkSRBa5jqk8lkGgn4Zha61aCuuHFv0+JagBWxC55PfSfRLRVHMRBHQfwI8I8BmOI+lCijhweNdWm8SSZTEJarbJMfUBYTo6vPI33QDN2XsUi43jB3gr/y3s1fV8QfDNKCLlKSpS6a8jdqhSz6ogQ2kYwDas1H0R7ukyg+RX2i37VNPcT
+        type : 3
+       code_elements :
+        type_code : 46
+        p_codes : []
+     -
+       name : ATT_Description
+       identifier : 0x2c5410f5012a2798
+       internal_properties : CAAAAAgAAADHE1qX91wVluP1AtaKoQG5sj/FDgJhukEj1Z4HSlcEcqrQCPVUvQ/YITt4a1uISNouw+D3ZH+C66Qq6Re8V8D6P42v7uLxhXTGqXFHUAgILJGYGkjR9qJ4jBiWp3xylWAwgnhXCKMkZMuAiUZz9MElKnm21F8b3uM6Otn/fwrPFa5lTctrEDSdDXYKUJscOUstYTV9Vg26GqV+cquRyHC8oYiE
+       type : 3
+       content :
+        identifier : 0x2543d87c074de3d6
+        internal_properties : CAAAAAgAAADIEYpQfUimeLzzNy/mKFsGMq1zJgbJmcY9uDYGNsFzBLq50HOMD+W5y19k2FdI7yI/kbK5EIZc094bungP7I5n/r72TwLBp7PqcOBKvsQaQ7ZJzJtDbTI7Wd5J/RsS63Q049cp+nBSaB3dFjH9FRyyWWrZSdgLnRD7IkSRBa5jqk8lkGgn4Zha61aCuuHFv0+JagBWxC55PfSfRLRVHMRBHQfwI8I8BmOI+lCijhweNdWm8SSZTEJarbJMfUBYTo6vPI33QDN2XsUi43jB3gr/y3s1fV8QfDNKCLlKSpS6a8jdqhSz6ogQ2kYwDas1H0R7ukyg+RX2i37VNPcT
+        type : 3
+       code_elements :
+        type_code : 46
+        p_codes : []
+    type : 30
+    code_elements :
+     type_code : 42
+     p_codes :
+      -
+        code : |1+
+         InitialiseZoneRepetéeExemples()
+         
+         
+        type : 14
+      -
+        type : 35
+        enabled : false
+      -
+        type : 22
+        enabled : false
+      -
+        type : 24
+        enabled : false
+      -
+        type : 23
+        enabled : false
+      -
+        type : 25
+        enabled : false
+      -
+        internal_properties : CAAAAAgAAACxg1Tf69UaFtHq56gET75/meterDa319Mx2PPe6GUp4RsOQOC92r3h8olf1nRKU/wp3CgUJmod4TnIM+RZZxNvRi5fgvL/H3FDXY0bZyE1vSwW7zZrslFgk1Nge5jwUPsKFgqQT/rc9PrcDVY=
+        code : |1+
+         SELON ZR_Exemples.ATT_NomCSP[ZR_Exemples]
+         	CAS "DisplayMgr"
+         		OuvreFenêtreMobile(FEN_GestionnaireEcran)
+         	CAS "AppMgr"
+         		OuvreFenêtreMobile(FEN_GestionnaireApplications)
+         	CAS "Clock"
+         		OuvreFenêtreMobile(FEN_Horloge)
+         	CAS "PowerMgr"
+         		OuvreFenêtreMobile(FEN_GestionnaireOS)
+         	CAS "WifiMgr"
+         		OuvreFenêtreMobile(FEN_GestionnaireWIFI)
+         	AUTRE CAS
+         		
+         FIN
+        type : 33
+      -
+        type : 230
+        enabled : false
+      -
+        type : 241
+        enabled : false
+      -
+        type : 222
+        enabled : false
+      -
+        type : 223
+        enabled : false
+      -
+        type : 224
+        enabled : false
+ actionbar :
+  name : ACTB_ActionBar
+  identifier : 0x2c51a6f3117d7845
+  internal_properties : CAAAAAgAAABrlRon0fn+3v1lsOEv1HpEMoC7JGkzB9npGCbgxgWfAwhMWO9hB3btS5VgWNyYICaxPP5Hx9GzDW3mAEJGtV/lxbgkV/V8iJHLya2Hmt9sm7nL2Q9UWF4+NZZZ0ZYfZOpYSnRCBlextSmcdFuqwBBJWj28UotPKAv8Nbo2isUWHuwR0ReVPJAI13FOMYaVlhNGpzKbytobZIc5Rav9VagXXMU+1k+SQLcCo+ozLxfSZPfH1th7k27m4qDGR0vnQRe3bWal7fX5ROBr4CUoCgzybzWfQtbN9VCgdRqY+oGqB5o6a1Qb3mf2gYl8FPV1eAInk225yUDujpbKU9CrNkCblnuQlKogZwRYgNZyi8IUVCCmvaPjZbyAJ4iIjsLCrzidb9+R+jy0ntbxRmPo8olyo7mFtO+0AqXky/D3A0ToInw9jMq7NlkH3Eec/kepKKHe8wHA6eS42sxWytQWcr6dqHEgBGsg/mLvxpLSl3yNZlWDJkZsgpCEuL1IbtPaAY7N8RMFemHLetYpLqBxiCJx0alGFvcjXxDN9wsOuedMLvqWiU6u2LFjEWOjAALAf53C0mPo2QzHJ8E=
+  controls : []
+  code_elements :
+   type_code : 125
+   p_codes :
+    -
+      type : 229
+      enabled : false
+    -
+      type : 239
+      enabled : false
+    -
+      type : 240
+      enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x29f8144500a4e5ba
+  internal_properties : CAAAAAgAAAAHht6W6CUWQzfdHq1OPyt5wYdyoqOtyQDvf1RaeJ/IoRYVgon6N/KdIWx6dZFgCHXUOVtEAR7H6XOZ0x+r2VqhiPONZ8NrMVYZYlm5z73xZfWM7RWyDB/iTZ4jcUyfoM4Ke3OJjgdGO3QVlGQ4OZtZ/AHKIhYZI+MUElL2H5Z4ZgTJKa8T720MsqPXrWyJIHh4Q2Q7pQFdoqvpZESeyK69RUJDl3Xg4w9HesPi8ippIgwbe7LzZsSiQV6zhNpMW8P+Ft8rdQ5FAsDH7O8jOppsBbaC0fJnGcUv353gV0TEhU07gurUw3Jp80yjbVqnzxmpU3MiYWF1ZX40ftg/4AsnAtCLu9fgxz1igVOE4qJeRWBxhSgjP9cj4OysLlYuMWj2911TLRL1ZnykvveTdbrh6+rptRB/u7a3hKcDRs1W6zlcDoKHJhWCTvBjzsyy6gdjWHPzpfhjR2Y5OpmoFh0fcXCrv6MI91L4LkaxTAJo
+  options : []
+ languages :
+  - fr-FR
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAABKff4sxysR+9kg8GIJ708iDvb5GJxqytSUKL54fomJ9xlu42EWUFv/+en+BSQDmdB2krqVslwL/1eyQDVw8sffQk7lF3aDfZNzV/+zROsnKAy1jaSejRR5UgML
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      PROCEDURE MaFenêtre()
+      gsStatusTexte est une chaîne = ""
+      ghHeureDeDemarrage est une heure
+      gnNumeroDeTimer est un entier
+   -
+     code : |1-
+      // Nous allons ici démarrer le composant MX.
+      // Ce démarrage est asynchrone et peut prendre entre 30 secondes et une minute
+      // suivant le terminal exécutant l'application.
+      // Nous allons bloquer l'accès aux fenêtres filles le temps que le composant s'initialise
+      CacherLesBoutonsFenetresFilles()
+      ZebraMXDemarrer("FEN_Demo_Zebra_MX.CB_SuccesInitialisation", "FEN_Demo_Zebra_MX.CB_Erreur")
+      AjouteLigneDansStatus("Initialisation de MX")
+      ghHeureDeDemarrage = HeureSys()
+      CreeTimerPatienter()
+     type : 34
+   -
+     code : |1+
+      
+      
+     type : 234
+   -
+     code : |1+
+      
+      
+     type : 165
+   -
+     code : |1+
+      
+      
+     type : 177
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1+
+      ZebraMXStopper()
+      
+     type : 2
+  procedures :
+   -
+     name : CB_SuccesInitialisation
+     procedure_id : 2040613248084534148
+     type_code : 14
+     code : |1-
+      // Résumé : Procédure exécutée lorsque l'initialisation s'est déroulée avec succès
+      // Supprime le timer d'attente
+      // Affiche les boutons permettant d'ouvrir les fenêtres filles
+      // Syntaxe :
+      //CB_SuccesInitialisation (<sMessage> est chaîne)
+      //
+      // Paramètres :
+      //	sMessage (chaîne UNICODE) : <indiquez ici le rôle de sMessage>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE CB_SuccesInitialisation(sMessage est une chaine)
+      SupprimeTimerPatienter()
+      AfficherLesBoutonsFenêtresFilles()
+      AjouteLigneDansStatus(sMessage)
+      AjouteDuréeDansStatus(Vrai)
+     type : 458752
+   -
+     name : AjouteLigneDansStatus
+     procedure_id : 2040613501487729117
+     type_code : 14
+     code : |1+
+      // Résumé : Ajoute une ligne de texte dans le champ texte SAI_Stat
+      // Syntaxe :
+      //AjouteLigneDansStatus (<sLigneAAjouter> est chaîne)
+      //
+      // Paramètres :
+      //	sLigneAAjouter (chaîne UNICODE) : Texte à ajouter au status de l'application
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // AjouteLigneDansStatus("Tout va très bien, madame la marquise.")
+      //
+      PROCEDURE AjouteLigneDansStatus(sLigneAAjouter est une chaîne)
+      ExécuteThreadPrincipal(AjouteLigneDansStatusT,sLigneAAjouter)
+      
+     type : 458752
+   -
+     name : AjouteLigneDansStatusT
+     procedure_id : 2040613540142508629
+     type_code : 14
+     code : |1+
+      // Résumé : Procédure exécutée dans le Thread principal depuis AjouteLigneDansStatus
+      // Syntaxe :
+      //AjouteLigneDansStatusT (<sLigneAAjouter> est chaîne)
+      //
+      // Paramètres :
+      //	sLigneAAjouter (chaîne UNICODE) : Chaine de texte à rajouter
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCÉDURE AjouteLigneDansStatusT(sLigneAAjouter est une chaîne)
+      gsStatusTexte += sLigneAAjouter + RC
+      SAI_Stat = gsStatusTexte
+      SAI_Stat..Curseur = Taille(SAI_Stat)+1
+      
+      
+     type : 458752
+   -
+     name : CB_Erreur
+     procedure_id : 2040613982524178003
+     type_code : 14
+     code : |1-
+      // Résumé : Procédure exécutée lorsqu'une méthode PrintConnect renvoie une erreur
+      // Syntaxe :
+      //CB_Erreur (<sMessage> est chaîne, <sErreur> est chaîne)
+      //
+      // Paramètres :
+      //	sMessage (chaîne UNICODE) : Le message associé à l'erreur
+      //	sErreur (chaîne UNICODE) : L'erreur qui s'est produite
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // CB_Erreur("Une erreur s'est produite lors de la récupération du Status","PC_NO_PRINTER_SELECTED")
+      //
+      PROCÉDURE CB_Erreur(sMessage est une chaine, sErreur est une chaîne)
+      AjouteLigneDansStatus(sMessage)
+      SI sErreur <> "" ALORS
+      	AjouteLigneDansStatus("Détail de l'erreur: ")
+      	AjouteLigneDansStatus(sErreur)
+      FIN
+     type : 458752
+   -
+     name : AjouteDuréeDansStatus
+     procedure_id : 2040905507724318129
+     type_code : 14
+     code : |1+
+      // Résumé : Ajoute une ligne de texte dans le champ texte SAI_Stat
+      // Syntaxe :
+      //AjouteDuréeDansStatus (<abFinInitialisation> est booléen)
+      //
+      // Paramètres :
+      //	abFinInitialisation (booléen) : <indiquez ici le rôle de abFinInitialisation>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // AjouteLigneDansStatus("Tout va très bien, madame la marquise.")
+      //
+      //	sLigneAAjouter (chaîne UNICODE) : Texte à ajouter au status de l'application
+      PROCEDURE AjouteDuréeDansStatus(abFinInitialisation est un booléen)
+      ExécuteThreadPrincipal(AjouteDuréeDansStatusT, abFinInitialisation)
+      
+     type : 458752
+   -
+     name : AjouteDuréeDansStatusT
+     procedure_id : 2040905696702923466
+     type_code : 14
+     code : |1+
+      // Résumé : Procédure exécutée dans le Thread principal depuis AjouteLigneDansStatus
+      // Syntaxe :
+      //AjouteDuréeDansStatusT (<abFinInitialisation> est booléen)
+      //
+      // Paramètres :
+      //	abFinInitialisation (booléen) : <indiquez ici le rôle de abFinInitialisation>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      //	sLigneAAjouter (chaîne UNICODE) : Chaine de texte à rajouter
+      PROCÉDURE AjouteDuréeDansStatusT(abFinInitialisation est un booléen)
+      hHeureCourante est une heure = HeureSys()
+      DuréeAttente est une Durée = hHeureCourante - ghHeureDeDemarrage
+      SI abFinInitialisation = Faux ALORS
+      	SAI_Stat = gsStatusTexte + RC + "Veuillez Patienter"+ RC + "Temps écoulé:" + DuréeAttente..EnMillisecondes + " ms" + RC
+      SINON
+      	gsStatusTexte += "Durée de traitement: " + DuréeAttente..EnMillisecondes + " ms" + RC	
+      	SAI_Stat = gsStatusTexte
+      FIN
+      SAI_Stat..Curseur = Taille(SAI_Stat)+1
+      
+      
+     type : 458752
+   -
+     name : CreeTimerPatienter
+     procedure_id : 2040906216394480607
+     type_code : 14
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      // CreeTimerPatienter ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE CreeTimerPatienter()
+      gnNumeroDeTimer = TimerSys(AjouteVeuillezPatienterDansStatus, 50)
+     type : 458752
+   -
+     name : AjouteVeuillezPatienterDansStatus
+     procedure_id : 2040909527814315083
+     type_code : 14
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      // AjouteVeuillezPatienterDansStatus ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE AjouteVeuillezPatienterDansStatus()
+      AjouteDuréeDansStatus(Faux)
+     type : 458752
+   -
+     name : SupprimeTimerPatienter
+     procedure_id : 2040910159174589794
+     type_code : 14
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      // SupprimeTimerPatienter ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE SupprimeTimerPatienter()
+      FinTimerSys(gnNumeroDeTimer)
+     type : 458752
+   -
+     name : CacherLesBoutonsFenetresFilles
+     procedure_id : 2040913968813893209
+     type_code : 14
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      // CacherLesBoutonsFenetresFilles ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE CacherLesBoutonsFenetresFilles()
+      ExécuteThreadPrincipal(CacherLesBoutonsFenetresFillesT)
+      
+     type : 458752
+   -
+     name : AfficherLesBoutonsFenêtresFilles
+     procedure_id : 2040919427717417871
+     type_code : 14
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      // AfficherLesBoutonsFenêtresFilles ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE AfficherLesBoutonsFenêtresFilles()
+      ExécuteThreadPrincipal(AfficherLesBoutonsFenêtresFillesT)
+     type : 458752
+   -
+     name : CacherLesBoutonsFenetresFillesT
+     procedure_id : 2040920780632168951
+     type_code : 14
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //CacherLesBoutonsFenetresFillesT ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE CacherLesBoutonsFenetresFillesT()
+      FEN_Demo_Zebra_MX..Plan = AvantInitialisationMX
+      
+     type : 458752
+   -
+     name : AfficherLesBoutonsFenêtresFillesT
+     procedure_id : 2040920943841029079
+     type_code : 14
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //AfficherLesBoutonsFenêtresFillesT ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE AfficherLesBoutonsFenêtresFillesT()
+      FEN_Demo_Zebra_MX..Plan = ApresInitialisationMX
+     type : 458752
+   -
+     name : InitialiseZoneRepetéeExemples
+     internal_properties : CAAAAAgAAABe2Vo8QuL6YXgYpyGGNHuOSfbuKkaB/SZ6rLRR4Qp6+0yJC4rJlMB5MmpmGC6Iad5a4vajxrhVs/LevTZMToSheTqIHOjIjz7QiMLrU/jXvK0C4oQEOeZ1M1Dbe1abOyJSscJiq8xwG29qBQYPDxL/iP6ExUP03wTPBPMvtGTkWTnrk8GybbShT3z+Ztu/+qrIiJNqpS4=
+     procedure_id : 2043501102491959562
+     type_code : 14
+     code : |1-
+      // Résumé : Initialise la zone répétée contenant la liste des exemples de cette démo
+      // Syntaxe :
+      // InitialiseZoneRepetéeExemples ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCEDURE InitialiseZoneRepetéeExemples()
+      
+      ZoneRépétéeAjouteLigne(ZR_Exemples, "DisplayMgr", "Gestion de la mise en veille de l'écran") 
+      ZoneRépétéeAjouteLigne(ZR_Exemples, "AppMgr", "Gestion d'applications") 
+      ZoneRépétéeAjouteLigne(ZR_Exemples, "Clock", "Gestion de l'horloge système") 
+      ZoneRépétéeAjouteLigne(ZR_Exemples, "PowerMgr", "Gestion du système d'exploitation") 
+      ZoneRépétéeAjouteLigne(ZR_Exemples, "WifiMgr", "Configuration du Wifi") 
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAAB6ragasMBWLfpsSyU19J6lAvYEqFWd1xYOjmHr1XHVZOVmechqLo1vKvfoAJhHeXL59P8BudVQfrBZ/U9vpjDz5RFibMKKm/84EA==
+  original_name : _11
+resources :
+ string_res :
+  identifier : 0x1c51a6e500833fd0
+  internal_properties : CAAAAAgAAACyXVFaObH4lOGSEHJoZf1MD49w+XTw2LScZCP/urkWFwy+HYJdyQ3umA==
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe
